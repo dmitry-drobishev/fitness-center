@@ -61,14 +61,89 @@
       </section>
 
       <main>
-        <!-- <section class="gym">
-          <h2>Тренажерный зал</h2>
-          <p>Просторный зал площадью 900 кв/м</p>
-          <span>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </span>
 
-          <img src="./img/gym/gym-img-desktop.jpg" width="660" height="401" alt="фото тренажеров">
-        </section> -->
+        <h1 class="visually-hidden">Фитнес центр Supergym</h1>
+
+        <section class="gym">
+          <div class="gym__wrapper">
+            <div class="gym__information-wrapper">
+              <h2>Тренажерный зал</h2>
+              <h3>Просторный зал площадью 900 кв/м</h3>
+              <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.<br>
+                <span>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</span>
+              </p>
+            </div>
+
+            <picture>
+               <!-- <source media="(max-width: 1023px)" srcset="./img/gym/gym-img-mobile.webp 1x, ./img/gym/gym-img-mobile@2x.webp 2x"> -->
+               <source media="(max-width: 767px)" srcset="./img/gym/gym-img-mobile.jpg 1x, ./img/gym/gym-img-mobile@2x.jpg 2x">
+              <!-- <source media="(max-width: 1023px)" srcset="./img/gym/gym-img-tablet.webp 1x, ./img/gym/gym-img-tablet@2x.webp 2x"> -->
+              <source media="(max-width: 1023px)" srcset="./img/gym/gym-img-tablet.jpg 1x, ./img/gym/gym-img-tablet@2x.jpg 2x">
+              <!-- <source type="image/webp" srcset="./img/gym/gym-img-desktop.webp 1x, ./img/gym/gym-img-desktop@2x.webp 2x"> -->
+              <img src="./img/gym/gym-img-desktop.jpg" srcset="./img/gym/gym-img-desktop@2x.jpg" width="660" height="401" alt="фото тренажеров">
+            </picture>
+          </div>
+        </section>
+
+        <section class="membership">
+          <div class="membership__wrapper">
+            <h2>абонементы</h2>
+            <ul class="membership__period-list">
+              <li class="membership__period-item">
+                <a>1 месяц</a>
+              </li>
+
+              <li class="membership__period-item">
+                <a>6 месяцев</a>
+              </li>
+
+              <li class="membership__period-item">
+                <a>12 месяцев</a>
+              </li>
+            </ul>
+
+            <ul class="membership__option-list">
+              <li class="membership__option-item">
+                <h3>С тренером</h3>
+                <p>12 занятий</p>
+                <div class="membership__option-price">
+                  <span>5000</span>
+                  <span>5000р</span>
+                </div>
+                </p>
+                <a class="membership__option-button" href="#">купить абонемент</a>
+              </li>
+
+              <li class="membership__option-item">
+                <h3>Дневной</h3>
+                <p>с 8:00 до 17:00</p>
+                <div class="membership__option-price">
+                  <span>1700</span>
+                  <span>1700р</span>
+                </div>
+                </p>
+                <a class="membership__option-button" href="#">купить абонемент</a>
+              </li>
+
+              <li class="membership__option-item">
+                <h3>Полный день</h3>
+                <p>с 8:00 до 22:00</p>
+                <div class="membership__option-price">
+                  <span>2700</span>
+                  <span>2700р</span>
+                </div>
+                </p>
+                <a class="membership__option-button" href="#">купить абонемент</a>
+              </li>
+            </ul>
+          </div>
+
+          <picture>
+
+            <img src="./img/membership/pancake-desktop.png" srcset="./img/membership/pancake-desktop@2x.png" alt="атлетические блины">
+          </picture>
+
+        </section>
 
       </main>
       <footer>
