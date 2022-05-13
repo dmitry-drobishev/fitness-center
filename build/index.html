@@ -4,41 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <meta name="description" content="Фитнес центр">
+    <title>Fitness Center</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
       <section class="top-block">
-        <header class="top-block__header">
-          <img src="./img/main-block/main-block-logo.svg" width="89" height="20px" alt="логотип supergym">
-          <a href="#">8-800-555-55-55</a>
-        </header>
+        <div class="top-block__wrapper">
 
-        <div class="top-block__content-wrapper">
-          <p>Омск</p>
-          <p>Фитнес центр</p>
-          <p>Тренажёрный зал Групповые занятия Кардио-зона </p>
-          <a href="#">Купить абонемент</a>
+          <header class="top-block__header">
+            <div class="top-block__header-logo">
+              <a>
+                <img src="./img/top-block/main-block-logo.svg" width="89" height="20" alt="логотип supergym">
+              </a>
+            </div>
 
-          <img src="./img/main-block/main-block-foto-desktop.jpg" width="500" height="556" alt="">
+            <a href="tel:+78005555555">8-800-555-55-55</a>
+          </header>
 
-          <a href="#">FB</a>
-          <a href="#">VK</a>
-          <a href="#">IG</a>
+          <div class="top-block__content-wrapper">
+            <div class="top-block__title-wrapper">
+              <p>Омск</p>
 
+              <div class="top-block__title-row-wrapper">
+                <span>Тренажёрный зал<br> Групповые занятия<br> Кардио-зона</span>
+                <h2>Фитнес<br> центр</h2>
+              </div>
+
+              <a class="top-block__button" href="#">Купить абонемент</a>
+            </div>
+
+
+            <picture>
+              <!-- <source media="(max-width: 1023px)" srcset="./img/top-block/main-block-foto-tablet.webp 1x, ./img/top-block/main-block-foto-tablet@2x.webp 2x"> -->
+              <source media="(max-width: 1023px)" srcset="./img/top-block/main-block-foto-tablet.jpg 1x, ./img/top-block/main-block-foto-tablet@2x.jpg 2x">
+              <!-- <source type="image/webp" srcset="./img/top-block/main-block-foto-desktop.webp 1x, ./img/top-block/main-block-foto-desktop@2x.webp 2x"> -->
+              <img src="./img/top-block/main-block-foto-desktop.jpg" srcset="./img/top-block/main-block-foto-desktop@2x.jpg" width="500" height="556" alt="фото мужчины в майке со знаком супермена">
+            </picture>
+
+            <ul class="top-block__social-list">
+              <li class="top-block__social-item">
+                <a href="#">fb</a>
+              </li>
+
+              <li class="top-block__social-item">
+                <a href="#">vk</a>
+              </li>
+
+              <li class="top-block__social-item">
+                <a href="#">ig</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
+
       <main>
-        <section class="gym">
+        <!-- <section class="gym">
           <h2>Тренажерный зал</h2>
           <p>Просторный зал площадью 900 кв/м</p>
           <span>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
             В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </span>
 
           <img src="./img/gym/gym-img-desktop.jpg" width="660" height="401" alt="фото тренажеров">
-        </section>
+        </section> -->
 
       </main>
       <footer>

@@ -6,6 +6,10 @@
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: $color-sapphire-blue;
 
   .header,
   .footer {
