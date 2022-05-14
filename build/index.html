@@ -89,7 +89,7 @@
           <div class="membership__wrapper">
             <h2>абонементы</h2>
             <ul class="membership__period-list">
-              <li class="membership__period-item">
+              <li class="membership__period-item membership__period-item--active">
                 <a>1 месяц</a>
               </li>
 
@@ -108,7 +108,11 @@
                 <p>12 занятий</p>
                 <div class="membership__option-price">
                   <span>5000</span>
-                  <span>5000р</span>
+                  <span>5000
+                    <svg width="30" height="42">
+                      <use xlink:href="img/sprite_auto.svg#ruble-icon"></use>
+                    </svg>
+                  </span>
                 </div>
                 </p>
                 <a class="membership__option-button" href="#">купить абонемент</a>
@@ -119,7 +123,11 @@
                 <p>с 8:00 до 17:00</p>
                 <div class="membership__option-price">
                   <span>1700</span>
-                  <span>1700р</span>
+                  <span>1700
+                    <svg width="30" height="42">
+                      <use xlink:href="img/sprite_auto.svg#ruble-icon"></use>
+                    </svg>
+                  </span>
                 </div>
                 </p>
                 <a class="membership__option-button" href="#">купить абонемент</a>
@@ -130,7 +138,11 @@
                 <p>с 8:00 до 22:00</p>
                 <div class="membership__option-price">
                   <span>2700</span>
-                  <span>2700р</span>
+                  <span>2700
+                    <svg width="30" height="42">
+                      <use xlink:href="img/sprite_auto.svg#ruble-icon"></use>
+                    </svg>
+                  </span>
                 </div>
                 </p>
                 <a class="membership__option-button" href="#">купить абонемент</a>
@@ -139,15 +151,144 @@
           </div>
 
           <picture>
-
+            <!-- <source media="(max-width: 1023px)" srcset="./img/membership/pancake-tablet.webp 1x, ./img/membership/pancake-tablet@2x.webp 2x"> -->
+            <source media="(max-width: 1023px)" srcset="./img/membership/pancake-tablet.png 1x, ./img/membership/pancake-tablet@2x.png 2x">
+            <!-- <source type="image/webp" srcset="./img/membership/pancake-desktop.webp 1x, ./img/membership/pancake-desktop@2x.webp 2x"> -->
             <img src="./img/membership/pancake-desktop.png" srcset="./img/membership/pancake-desktop@2x.png" alt="атлетические блины">
           </picture>
-
         </section>
 
-      </main>
-      <footer>
+        <section class="promo">
+          <div class="promo__wrapper">
+            <div class="promo__information-wrapper">
 
+              <div class="promo__information-row-wrapper">
+                <h2>super<br> games</h2>
+
+                <div class="promo__information-date-time-wrapper">
+                  <div class="promo__information-date">
+                    <h3>Дата</h3>
+                    <p>7 <span>марта 2019</span></p>
+                  </div>
+
+                  <div class="promo__information-time">
+                    <h3>Время</h3>
+                    <p>12:00</p>
+                  </div>
+                </div>
+              </div>
+
+              <p>Ежегодные соревнования по CrossFit</p>
+
+              <a class="promo__button" href="#">заполнить заявку</a>
+
+            </div>
+
+            <picture>
+
+              <!-- <source type="image/webp" srcset="./img/promo/promo-desktop.webp 1x, ./img/promo/promo-desktop@2x.webp"> -->
+              <img src="./img/promo/promo-desktop.jpg" srcset="./img/promo/promo-desktop@2x.jpg" width="660" height="500" alt="мужчина с голым торсом в упоре лежа перед ним облако магнезии">
+            </picture>
+          </div>
+        </section>
+
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <div class="contacts__information-wrapper">
+            <ul class="contacts__list contacts__list--first-col">
+              <li class="contacts__item">
+                <h3>Адрес:</h3>
+                <p>г. Омск, ул. 60 лет Октября, 7</p>
+              </li>
+
+              <li class="contacts__item">
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+            </ul>
+
+            <ul class="contacts__list contacts__list--second-col">
+              <li class="contacts__item">
+                <h3>Телефон:</h3>
+                <p>
+                  <a href="tel:+78005555555">8-800-555-55-55</a>
+                </p>
+              </li>
+
+              <li class="contacts__item">
+                <h3>Email:</h3>
+                <p>
+                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </p>
+              </li>
+            </ul>
+
+          </div>
+        </section>
+      </main>
+
+
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+
+          <div class="page-footer__logo">
+            <a>
+              <img src="./img/top-block/main-block-logo.svg" width="89" height="20" alt="логотип supergym">
+            </a>
+          </div>
+
+          <nav class="page-footer__nav">
+            <ul class="page-footer__nav-list">
+              <li class="page-footer__nav-item">
+                <a href="#">Услуги</a>
+              </li>
+
+              <li class="page-footer__nav-item">
+                <a href="#">Абонементы</a>
+              </li>
+
+              <li class="page-footer__nav-item">
+                <a href="#">Акции</a>
+              </li>
+
+              <li class="page-footer__nav-item">
+                <a href="#">Тренеры</a>
+              </li>
+
+              <li class="page-footer__nav-item">
+                <a href="#">Расписание</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="page-footer__social">
+            <ul class="page-footer__social-list">
+              <li class="page-footer__social-item page-footer__social-item--vk">
+                <a href="#">
+                  <svg width="24" height="13">
+                    <use xlink:href="img/sprite_auto.svg#vk-icon"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="page-footer__social-item page-footer__social-item--instagramm">
+                <a href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="img/sprite_auto.svg#instagramm-icon"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="page-footer__social-item page-footer__social-item--fb">
+                <a href="#">
+                  <svg width="12" height="24">
+                    <use xlink:href="img/sprite_auto.svg#face-book-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
 

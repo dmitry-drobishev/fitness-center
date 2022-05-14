@@ -1,0 +1,165 @@
+.promo {
+  margin: 0 auto;
+  padding: 120px 0;
+
+  @include vp-1023 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 70px 0;
+  }
+}
+.promo__wrapper {
+  width: $desktop-content;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 500px 660px;
+  justify-content: center;
+
+  @include vp-1279 {
+    width: auto;
+    margin: 0 $desktop-margin-asade;
+    grid-template-columns: 500px auto;
+  }
+
+  @include vp-1023 {
+    margin: 0 $tablet-margin-asade;
+    grid-template-columns: 292px 386px;
+  }
+
+  @include vp-767 {
+    margin: 0 $mobile-margin-asade;
+    display: block;
+  }
+
+  img {
+    display: block;
+    width: 660px;
+    height: 500px;
+    background-color: $color-sapphire-blue;
+
+    @include vp-1279 {
+      width: auto;
+      object-fit: cover;
+    }
+
+    @include vp-1023 {
+      width: 386px;
+      height: 292px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      height: 292px;
+      object-fit: cover;
+    }
+  }
+}
+
+.promo__information-row-wrapper {
+  display: flex;
+}
+
+.promo__information-date-time-wrapper {
+  margin-left: 50px;
+
+  @include vp-1023 {
+    margin-left: 45px;
+  }
+
+  @include vp-767 {
+    margin-left: 29px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-default-white;
+    margin: 0;
+
+    @include vp-1023 {
+      font-size: 12px;
+    }
+  }
+
+  p {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    color: $color-default-white;
+    margin: 0;
+
+    @include vp-1023 {
+      font-size: 24px;
+    }
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-default-white;
+
+    @include vp-1023 {
+      font-size: 10px;
+    }
+  }
+}
+
+.promo__information-wrapper {
+  background-color: $color-torch-red;
+  padding: 87px 78px;
+
+  @include vp-1023 {
+    padding: 51px 45px;
+  }
+
+  h2 {
+    font-family: $ff-bebas-neue;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: 0.03em;
+    color: $color-default-white;
+    margin: 0;
+
+    @include vp-1023 {
+      font-size: 52px;
+      line-height: 52px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-default-white;
+    margin: 0;
+
+    @include vp-1023 {
+      font-size: 12px;
+    }
+  }
+}
+
+.promo__button {
+  box-sizing: border-box;
+  display: block;
+  width: 343px;
+  padding: 25px;
+  border: 4px solid $color-default-white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    width: 202px;
+    padding: 16px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
