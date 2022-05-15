@@ -1,0 +1,110 @@
+.free {
+  background-color: $color-sapphire-blue;
+  padding: 70px 170px 70px 30px;
+
+  @include vp-1023 {
+    padding-right: 30px;
+  }
+
+  @include vp-767 {
+    padding: 70px 0;
+  }
+
+
+  h2 {
+    font-family: $ff-bebas-neue;
+    font-size: 49px;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+    text-transform: lowercase;
+    color: $color-default-white;
+    margin: 0;
+
+    @include vp-1023 {
+      font-size: 42px;
+      line-height: 100%;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+    }
+  }
+}
+
+.free__form {
+  width: 410px;
+  margin-right: 0;
+  margin-left: auto;
+
+  @include vp-1023 {
+    width: 472px;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    width: auto;
+    margin: 0 $mobile-margin-asade;
+  }
+
+  input {
+    border: none;
+    border-bottom: 1px solid $color-light-slate-grey;
+    background-color: transparent;
+    width: 100%;
+    font-family: $ff-roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
+
+    // @include vp-1023 {
+    //   width: 206px;
+    // }
+
+
+    &::placeholder {
+      font-family: $ff-roboto;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-default-white;
+    }
+  }
+}
+
+.free__form-list {
+  display: grid;
+  grid-template-columns: 190px 190px;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+
+  @include vp-1023 {
+    grid-template-columns: 206px 206px;
+    gap: 60px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: none;
+    grid-template-rows: auto auto;
+    gap: 40px;
+  }
+}
+
+.free__button {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 18px 30px;
+  border: 3px solid $color-default-white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: $color-default-white;
+}

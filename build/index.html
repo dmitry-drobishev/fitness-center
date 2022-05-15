@@ -192,39 +192,66 @@
           </div>
         </section>
 
-        <section class="contacts">
-          <h2>Контакты</h2>
-          <div class="contacts__information-wrapper">
-            <ul class="contacts__list contacts__list--first-col">
-              <li class="contacts__item">
-                <h3>Адрес:</h3>
-                <p>г. Омск, ул. 60 лет Октября, 7</p>
-              </li>
+        <div class="free-contacts-wrapper">
+          <section class="free">
 
-              <li class="contacts__item">
-                <h3>График работы:</h3>
-                <p>Пн-Вс: с 8:00 до 22:00</p>
-              </li>
-            </ul>
+            <form class="free__form" action="https://echo.htmlacademy.ru/courses" method="get" target="_blank">
 
-            <ul class="contacts__list contacts__list--second-col">
-              <li class="contacts__item">
-                <h3>Телефон:</h3>
-                <p>
-                  <a href="tel:+78005555555">8-800-555-55-55</a>
-                </p>
-              </li>
+              <h2>бесплатное занятие</h2>
 
-              <li class="contacts__item">
-                <h3>Email:</h3>
-                <p>
-                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-                </p>
-              </li>
-            </ul>
+              <ul class="free__form-list">
 
-          </div>
-        </section>
+                <li class="free__form-item">
+                  <label class="visually-hidden" for="input-name">Имя</label>
+                  <input type="text" id="input-name" name="name_user" placeholder="Имя" required>
+                </li>
+
+                <li class="free__form-item">
+                  <label class="visually-hidden" for="input-phone">Телефон</label>
+                  <input type="tel" id="input-phone" name="phone-number" placeholder="Телефон" required>
+                </li>
+              </ul>
+
+              <button class="free__button" type="submit" id="free-button">Отправить</button>
+            </form>
+          </section>
+
+          <section class="contacts">
+            <h2>Контакты</h2>
+            <div class="contacts__information-wrapper">
+              <ul class="contacts__list contacts__list--first-col">
+                <li class="contacts__item">
+                  <h3>Адрес:</h3>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+                </li>
+
+                <li class="contacts__item">
+                  <h3>График работы:</h3>
+                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                </li>
+              </ul>
+
+              <ul class="contacts__list contacts__list--second-col">
+                <li class="contacts__item">
+                  <h3>Телефон:</h3>
+                  <p>
+                    <a href="tel:+78005555555">8-800-555-55-55</a>
+                  </p>
+                </li>
+
+                <li class="contacts__item">
+                  <h3>Email:</h3>
+                  <p>
+                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </p>
+                </li>
+              </ul>
+
+            </div>
+          </section>
+        </div>
+
+
       </main>
 
 
