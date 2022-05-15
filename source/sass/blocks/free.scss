@@ -56,11 +56,7 @@
     font-size: 14px;
     line-height: 16px;
     color: $color-default-white;
-
-    // @include vp-1023 {
-    //   width: 206px;
-    // }
-
+    background-color: transparent;
 
     &::placeholder {
       font-family: $ff-roboto;

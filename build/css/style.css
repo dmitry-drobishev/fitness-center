@@ -1366,6 +1366,7 @@ button,
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+  background-color: transparent;
 }
 
 .free__form input::-webkit-input-placeholder {
