@@ -1,6 +1,11 @@
 .contacts {
   padding: 70px 30px 70px 120px;
 
+  @include vp-1279 {
+    padding-right: $desktop-margin-asade;
+    padding-left: $desktop-margin-asade;
+  }
+
   @include vp-1023 {
     padding: 70px 0;
     width: 472px;

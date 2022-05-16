@@ -46,8 +46,12 @@
 
   @include vp-767 {
     margin: 0 $mobile-margin-asade;
-    flex-direction: column;
+    display: block;
   }
+}
+
+.page-footer__nav {
+  display: flex;
 }
 
 .page-footer__nav-list {
@@ -56,10 +60,31 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  width: fit-content;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+
+  &--second {
+    @include vp-767 {
+      margin-top: -55px;
+      margin-left: 70px;
+    }
+  }
 }
 
 .page-footer__nav-item {
   margin-left: 34px;
+
+  @include vp-1023 {
+    margin-left: 24px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    margin-top: 30px;
+  }
 
   a {
     display: block;
@@ -82,12 +107,28 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-left: 40px;
+
+  @include vp-1023 {
+    margin-left: 15px;
+  }
+
+  @include vp-767 {
+    margin-top: 35px;
+    margin-left: 0;
+  }
 }
 
 .page-footer__social-item {
   margin-left: 25px;
 
+  @include vp-1023 {
+    margin-left: 14px;
+  }
+
   &--vk {
+    margin-left: 0;
+
     svg {
       display: block;
       width: 24px;

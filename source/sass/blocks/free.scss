@@ -2,6 +2,11 @@
   background-color: $color-sapphire-blue;
   padding: 70px 170px 70px 30px;
 
+  @include vp-1279 {
+    padding-left: $desktop-margin-asade;
+    padding-right: $desktop-margin-asade;
+  }
+
   @include vp-1023 {
     padding-right: 30px;
   }
