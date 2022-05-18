@@ -63,12 +63,11 @@
   }
 
   @include vp-1023 {
-    min-width: none;
+    min-width: auto;
   }
 
   @include vp-767 {
     display: block;
-    width: auto;
   }
 
   img {
@@ -83,10 +82,10 @@
     }
 
     @include vp-767 {
-      width: auto;
+      width: 100%;
       height: 299px;
       object-fit: cover;
-      // object-position: 100% 0%;
+      object-position: 100% 0%;
     }
   }
 }
@@ -96,10 +95,6 @@
   background-color: $color-torch-red;
   display: flex;
   flex-direction: column;
-
-  // @include vp-767 {
-  //   display: block;
-  // }
 
   p {
     display: flex;
@@ -192,6 +187,10 @@
 
   @include vp-1023 {
     margin-top: 0;
+  }
+
+  @include vp-767 {
+    margin-top: 30px;
   }
 
   &:first-of-type {

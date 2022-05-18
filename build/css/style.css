@@ -436,6 +436,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -956,6 +957,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 120px 0;
+  position: relative;
 }
 
 .gym__wrapper img {
@@ -997,6 +999,44 @@ button,
   line-height: 150%;
   margin: 0;
   margin-top: 55px;
+}
+
+.gym__video {
+  position: absolute;
+  width: 354px;
+  height: 228px;
+}
+
+.gym__video a {
+  display: block;
+}
+
+.gym__video img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.gym__video-button {
+  position: absolute;
+  display: block;
+  border: none;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/gym/play-icon.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.gym__video:hover {
+  opacity: 0.7;
 }
 
 .membership {
@@ -2533,7 +2573,7 @@ button,
   }
 
   .actions__basic-action {
-    min-width: none;
+    min-width: auto;
   }
 
   .actions__basic-action img {
@@ -2909,14 +2949,15 @@ button,
 
   .actions__basic-action {
     display: block;
-    width: auto;
   }
 
   .actions__basic-action img {
-    width: auto;
+    width: 100%;
     height: 299px;
     -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: 100% 0%;
+    object-position: 100% 0%;
   }
 
   .actions__price p {
@@ -2938,6 +2979,10 @@ button,
 
   .actions__list {
     display: block;
+  }
+
+  .actions__item {
+    margin-top: 30px;
   }
 
   .reviews {

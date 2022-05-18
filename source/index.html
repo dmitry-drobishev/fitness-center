@@ -33,7 +33,7 @@
                 <h2>Фитнес<br> центр</h2>
               </div>
 
-              <a class="top-block__button" href="#">Купить абонемент</a>
+              <a class="top-block__button" href="#membership-block">Купить абонемент</a>
             </div>
 
             <picture>
@@ -87,10 +87,29 @@
               <source type="image/webp" srcset="./img/gym/gym-img-desktop.webp 1x, ./img/gym/gym-img-desktop@2x.webp 2x">
               <img src="./img/gym/gym-img-desktop.jpg" srcset="./img/gym/gym-img-desktop@2x.jpg" width="660" height="401" alt="фото тренажеров">
             </picture>
+
+            <div class="gym__video">
+              <a href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+                <picture>
+                  <!-- <source type="image/webp" srcset="./img/gym/gym-video.webp 1x, ./img/gym/gym-video@2x.webp"> -->
+                  <img src="./img/gym/gym-video.jpg" srcset="./img/gym/gym-video.jpg" width="364" height="228" alt="заставка видео про supergym">
+                </picture>
+              </a>
+
+              <button class="gym__video-button">
+                <span class="visually-hidden">
+                  Запустить видео
+                </span>
+              </button>
+            </div>
+
+            <!-- <video controls>
+              <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </video> -->
           </div>
         </section>
 
-        <section class="membership">
+        <section class="membership" id="membership-block">
           <div class="membership__wrapper">
             <h2>Абонементы</h2>
             <ul class="membership__period-list">
@@ -359,7 +378,7 @@
 
         <section class="actions">
 
-          <h2>Акции</h2>
+          <!-- <h2>Акции</h2> -->
 
           <div class="actions__wrapper">
             <div class="actions__basic-action">
