@@ -1270,6 +1270,162 @@ button,
   color: #ffffff;
 }
 
+.trainers {
+  padding-bottom: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.trainers h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin: 0;
+}
+
+.trainers__wrapper {
+  width: 1160px;
+  margin: 0;
+}
+
+.trainers__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 62px;
+}
+
+.trainers__item {
+  width: 260px;
+  height: 294px;
+  position: relative;
+}
+
+.trainers__item:hover .trainers__trainer-information {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 58px;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.trainers__item h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: #ffffff;
+  margin: 0;
+}
+
+.trainers__trainer-preview {
+  width: 100%;
+  height: 100%;
+}
+
+.trainers__trainer-preview h3 {
+  position: absolute;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  bottom: 0;
+}
+
+.trainers__trainer-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.trainers__trainer-information {
+  display: none;
+  z-index: 100;
+}
+
+.trainers__trainer-information p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 150%;
+  color: #B6BDCC;
+}
+
+.trainers__trainer-information ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 45px;
+  list-style: none;
+}
+
+.trainers__trainer-information li {
+  font-size: 14px;
+  line-height: 150%;
+  margin-top: 24px;
+  position: relative;
+  color: #ffffff;
+}
+
+.trainers__trainer-information li:first-of-type {
+  margin-top: 0;
+}
+
+.trainers__trainer-information li::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  left: -16px;
+  top: 7px;
+}
+
+.trainers__button {
+  background-color: transparent;
+  border: none;
+  width: 16px;
+  height: 32px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 90px;
+}
+
+.trainers__button--back {
+  background-image: url("../img/svg/arrow-back.svg");
+  margin-right: 40px;
+}
+
+.trainers__button--next {
+  background-image: url("../img/svg/arrow-next.svg");
+  margin-left: 40px;
+}
+
+.trainers__button:hover {
+  opacity: 0.7;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
 .advantages {
   background-color: #f8f9fc;
 }
@@ -1654,23 +1810,24 @@ button,
   width: 16px;
   height: 32px;
   cursor: pointer;
-  background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .reviews__button--back {
+  background-image: url("../img/svg/arrow-back.svg");
   margin-right: 40px;
 }
 
 .reviews__button--next {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  background-image: url("../img/svg/arrow-next.svg");
   margin-left: 40px;
 }
 
 .reviews__button:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
   opacity: 0.7;
 }
 
@@ -2021,6 +2178,35 @@ button,
     object-fit: cover;
   }
 
+  .trainers {
+    margin: 0 30px;
+  }
+
+  .trainers__wrapper {
+    width: auto;
+  }
+
+  .trainers__list {
+    gap: 20px;
+  }
+
+  .trainers__item {
+    width: auto;
+  }
+
+  .trainers__trainer-preview img {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .trainers__button--back {
+    margin-right: 20px;
+  }
+
+  .trainers__button--next {
+    margin-left: 20px;
+  }
+
   .advantages__wrapper {
     width: auto;
     margin: 0 30px;
@@ -2243,6 +2429,34 @@ button,
     padding: 16px;
     font-size: 10px;
     line-height: 12px;
+  }
+
+  .trainers {
+    padding-bottom: 100px;
+    margin: 0 45px;
+  }
+
+  .trainers h2 {
+    font-size: 42px;
+  }
+
+  .trainers__list {
+    -ms-grid-columns: (auto)[2];
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .trainers__item {
+    width: 268px;
+  }
+
+  .trainers__button--back {
+    margin-right: 40px;
+  }
+
+  .trainers__button--next {
+    margin-left: 40px;
   }
 
   .advantages__wrapper {
@@ -2592,6 +2806,41 @@ button,
     margin-left: 29px;
   }
 
+  .trainers {
+    padding-bottom: 70px;
+    margin: 0 15px;
+  }
+
+  .trainers h2 {
+    font-size: 32px;
+  }
+
+  .trainers__list {
+    display: block;
+  }
+
+  .trainers__item {
+    width: 226px;
+    height: 274px;
+  }
+
+  .trainers__item:hover .trainers__trainer-information {
+    padding: 48px;
+  }
+
+  .trainers__button {
+    width: 10px;
+    height: 19px;
+  }
+
+  .trainers__button--back {
+    margin-right: 22px;
+  }
+
+  .trainers__button--next {
+    margin-left: 22px;
+  }
+
   .advantages__wrapper {
     margin: 0 auto;
     padding: 70px 0;
@@ -2660,10 +2909,11 @@ button,
 
   .actions__basic-action {
     display: block;
+    width: auto;
   }
 
   .actions__basic-action img {
-    width: 100%;
+    width: auto;
     height: 299px;
     -o-object-fit: cover;
     object-fit: cover;
@@ -2684,6 +2934,10 @@ button,
   .actions__price a {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .actions__list {
+    display: block;
   }
 
   .reviews {

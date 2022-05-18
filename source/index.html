@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Фитнес центр">
-    <title>Fitness Center</title>
+    <meta name="description" content="Фитнес центр supergym">
+    <title>SuperGym</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -16,6 +16,7 @@
           <header class="top-block__header">
             <div class="top-block__header-logo">
               <a>
+                <!-- 1х: 89px; -->
                 <img src="./img/top-block/main-block-logo.svg" width="89" height="20" alt="логотип supergym">
               </a>
             </div>
@@ -36,9 +37,11 @@
             </div>
 
             <picture>
-              <!-- <source media="(max-width: 1023px)" srcset="./img/top-block/main-block-foto-tablet.webp 1x, ./img/top-block/main-block-foto-tablet@2x.webp 2x"> -->
+              <!-- 1х: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="./img/top-block/main-block-foto-tablet.webp 1x, ./img/top-block/main-block-foto-tablet@2x.webp 2x">
               <source media="(max-width: 1023px)" srcset="./img/top-block/main-block-foto-tablet.jpg 1x, ./img/top-block/main-block-foto-tablet@2x.jpg 2x">
-              <!-- <source type="image/webp" srcset="./img/top-block/main-block-foto-desktop.webp 1x, ./img/top-block/main-block-foto-desktop@2x.webp 2x"> -->
+              <!-- 1х: 500px; 2x: 1000px -->
+              <source type="image/webp" srcset="./img/top-block/main-block-foto-desktop.webp 1x, ./img/top-block/main-block-foto-desktop@2x.webp 2x">
               <img src="./img/top-block/main-block-foto-desktop.jpg" srcset="./img/top-block/main-block-foto-desktop@2x.jpg" width="500" height="556" alt="фото мужчины в майке со знаком супермена">
             </picture>
 
@@ -74,11 +77,14 @@
             </div>
 
             <picture>
-               <!-- <source media="(max-width: 1023px)" srcset="./img/gym/gym-img-mobile.webp 1x, ./img/gym/gym-img-mobile@2x.webp 2x"> -->
-               <source media="(max-width: 767px)" srcset="./img/gym/gym-img-mobile.jpg 1x, ./img/gym/gym-img-mobile@2x.jpg 2x">
-              <!-- <source media="(max-width: 1023px)" srcset="./img/gym/gym-img-tablet.webp 1x, ./img/gym/gym-img-tablet@2x.webp 2x"> -->
+              <!-- 1х: 320px; 2x: 640px -->
+              <source media="(max-width: 1023px)" srcset="./img/gym/gym-img-mobile.webp 1x, ./img/gym/gym-img-mobile@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="./img/gym/gym-img-mobile.jpg 1x, ./img/gym/gym-img-mobile@2x.jpg 2x">
+              <!-- 1х: 678px; 2x: 1356px -->
+              <source media="(max-width: 1023px)" srcset="./img/gym/gym-img-tablet.webp 1x, ./img/gym/gym-img-tablet@2x.webp 2x">
               <source media="(max-width: 1023px)" srcset="./img/gym/gym-img-tablet.jpg 1x, ./img/gym/gym-img-tablet@2x.jpg 2x">
-              <!-- <source type="image/webp" srcset="./img/gym/gym-img-desktop.webp 1x, ./img/gym/gym-img-desktop@2x.webp 2x"> -->
+              <!-- 1х: 660px; 2x: 1320px -->
+              <source type="image/webp" srcset="./img/gym/gym-img-desktop.webp 1x, ./img/gym/gym-img-desktop@2x.webp 2x">
               <img src="./img/gym/gym-img-desktop.jpg" srcset="./img/gym/gym-img-desktop@2x.jpg" width="660" height="401" alt="фото тренажеров">
             </picture>
           </div>
@@ -86,7 +92,7 @@
 
         <section class="membership">
           <div class="membership__wrapper">
-            <h2>абонементы</h2>
+            <h2>Абонементы</h2>
             <ul class="membership__period-list">
               <li class="membership__period-item membership__period-item--active">
                 <a>1 месяц</a>
@@ -108,6 +114,7 @@
                 <div class="membership__option-price">
                   <span>5000</span>
                   <span>5000
+                    <!-- 1х: 30px;  -->
                     <svg width="30" height="42">
                       <use xlink:href="img/sprite_auto.svg#ruble-icon"></use>
                     </svg>
@@ -123,6 +130,7 @@
                 <div class="membership__option-price">
                   <span>1700</span>
                   <span>1700
+                    <!-- 1х: 30px; -->
                     <svg width="30" height="42">
                       <use xlink:href="img/sprite_auto.svg#ruble-icon"></use>
                     </svg>
@@ -138,6 +146,7 @@
                 <div class="membership__option-price">
                   <span>2700</span>
                   <span>2700
+                    <!-- 1х: 30px; -->
                     <svg width="30" height="42">
                       <use xlink:href="img/sprite_auto.svg#ruble-icon"></use>
                     </svg>
@@ -150,10 +159,12 @@
           </div>
 
           <picture>
-            <!-- <source media="(max-width: 1023px)" srcset="./img/membership/pancake-tablet.webp 1x, ./img/membership/pancake-tablet@2x.webp 2x"> -->
+            <!-- 1х: 289px; 2x: 578px -->
+            <source media="(max-width: 1023px)" srcset="./img/membership/pancake-tablet.webp 1x, ./img/membership/pancake-tablet@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="./img/membership/pancake-tablet.png 1x, ./img/membership/pancake-tablet@2x.png 2x">
-            <!-- <source type="image/webp" srcset="./img/membership/pancake-desktop.webp 1x, ./img/membership/pancake-desktop@2x.webp 2x"> -->
-            <img src="./img/membership/pancake-desktop.png" srcset="./img/membership/pancake-desktop@2x.png" alt="атлетические блины">
+            <!-- 1х: 321px; 2x: 642px -->
+            <source type="image/webp" srcset="./img/membership/pancake-desktop.webp 1x, ./img/membership/pancake-desktop@2x.webp 2x">
+            <img src="./img/membership/pancake-desktop.png" srcset="./img/membership/pancake-desktop@2x.png" width="321" height="552" alt="атлетические блины">
           </picture>
         </section>
 
@@ -184,11 +195,129 @@
             </div>
 
             <picture>
-
-              <!-- <source type="image/webp" srcset="./img/promo/promo-desktop.webp 1x, ./img/promo/promo-desktop@2x.webp"> -->
+              <!-- 1х: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" srcset="./img/promo/promo-mobile.webp 1x, ./img/promo/promo-mobile@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="./img/promo/promo-mobile.jpg 1x, ./img/promo/promo-mobile@2x.jpg 2x">
+              <!-- 1х: 386px; 2x: 772px -->
+              <source media="(max-width: 1023px)" srcset="./img/promo/promo-tablet.webp 1x, ./img/promo/promo-tablet@2x.webp 2x">
+              <source media="(max-width: 1023px)" srcset="./img/promo/promo-tablet.jpg 1x, ./img/promo/promo-tablet@2x.jpg 2x">
+              <!-- 1х: 660px; 2x: 1320px -->
+              <source type="image/webp" srcset="./img/promo/promo-desktop.webp 1x, ./img/promo/promo-desktop@2x.webp">
               <img src="./img/promo/promo-desktop.jpg" srcset="./img/promo/promo-desktop@2x.jpg" width="660" height="500" alt="мужчина с голым торсом в упоре лежа перед ним облако магнезии">
             </picture>
           </div>
+        </section>
+
+        <section class="trainers">
+
+           <!-- кнопка назад -->
+           <button class="trainers__button trainers__button--back">
+            <span class="visually-hidden">
+              предыдущий тренер
+            </span>
+          </button>
+
+          <div class="trainers__wrapper">
+            <h2>Тренеры</h2>
+
+            <ul class="trainers__list">
+
+              <!-- Карточка тренера 1 -->
+              <li class="trainers__item">
+                <div class="trainers__trainer-preview">
+                  <picture>
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <source type="image/webp" srcset="./img/trainers/trainer-1-desktop.webp 1x, ./img/trainers/trainer-1-desktop@2x.webp">
+                    <img src="./img/trainers/trainer-1-desktop.jpg" srcset="./img/trainers/trainer-1-desktop@2x.jpg" width="260" height="294" alt="фото тренера Анны Павловой">
+                  </picture>
+                  <h3>Анна Павлова</h3>
+                </div>
+
+                <div class="trainers__trainer-information">
+                  <h3>Анна Павлова</h3>
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- Карточка тренера 2 -->
+              <li class="trainers__item">
+                <div class="trainers__trainer-preview">
+                  <picture>
+                     <!-- 1х: 260px; 2x: 520px -->
+                    <source type="image/webp" srcset="./img/trainers/trainer-2-desktop.webp 1x, ./img/trainers/trainer-2-desktop@2x.webp">
+                    <img src="./img/trainers/trainer-2-desktop.jpg" srcset="./img/trainers/trainer-2-desktop@2x.jpg" width="260" height="294" alt="фото тренера Алексей Лавров">
+                  </picture>
+                  <h3>Алексей Лавров</h3>
+                </div>
+
+                <div class="trainers__trainer-information">
+                  <h3>Алексей Лавров</h3>
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- Карточка тренера 3 -->
+              <li class="trainers__item">
+                <div class="trainers__trainer-preview">
+                  <picture>
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <source type="image/webp" srcset="./img/trainers/trainer-3-desktop.webp 1x, ./img/trainers/trainer-3-desktop@2x.webp">
+                    <img src="./img/trainers/trainer-3-desktop.jpg" srcset="./img/trainers/trainer-3-desktop@2x.jpg" width="260" height="294" alt="фото тренера Александр Пашков">
+                  </picture>
+                  <h3>Александр Пашков</h3>
+                </div>
+
+                <div class="trainers__trainer-information">
+                  <h3>Александр Пашков</h3>
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- Карточка тренера 4 -->
+              <li class="trainers__item">
+                <div class="trainers__trainer-preview">
+                  <picture>
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <source type="image/webp" srcset="./img/trainers/trainer-4-desktop.webp 1x, ./img/trainers/trainer-4-desktop@2x.webp">
+                    <img src="./img/trainers/trainer-4-desktop.jpg" srcset="./img/trainers/trainer-4-desktop@2x.jpg" width="260" height="294" alt="фото тренера Мария Кетова">
+                  </picture>
+                  <h3>Мария Кетова</h3>
+                </div>
+
+                <div class="trainers__trainer-information">
+                  <h3>Мария Кетова</h3>
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- кнопка вперед -->
+          <button class="trainers__button trainers__button--next">
+            <span class="visually-hidden">
+              предыдущий тренер
+            </span>
+          </button>
         </section>
 
         <section class="advantages">
@@ -242,6 +371,14 @@
               </div>
 
               <picture>
+                <!-- 1х: 290px; 2x: 580px -->
+                <source media="(max-width: 767px)" srcset="./img/actions/actions-foto-mobile.webp 1x, ./img/actions/actions-foto-mobile@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="./img/actions/actions-foto-mobile.jpg 1x, ./img/actions/actions-foto-mobile@2x.jpg 2x">
+                 <!-- 1х: 399px; 2x: 798px -->
+                <source media="(max-width: 1023px)" srcset="./img/actions/actions-foto-tablet.webp 1x, ./img/actions/actions-foto-tablet@2x.webp 2x">
+                <source media="(max-width: 1023px)" srcset="./img/actions/actions-foto-tablet.jpg 1x, ./img/actions/actions-foto-tablet@2x.jpg 2x">
+                <!-- 1х: 280px; 2x: 560px -->
+                <source type="image/webp" srcset="./img/actions/actions-foto-desktop.webp 1x, ./img/actions/actions-foto-desktop@2x.webp">
                 <img src="./img/actions/actions-foto-desktop.jpg" srcset="./img/actions/actions-foto-desktop@2x.jpg" width="280" height="462" alt="девушка стоит в половину оборота в спортивном топе на фоне неба">
               </picture>
             </div>
