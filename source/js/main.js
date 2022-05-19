@@ -1,5 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {chooseMembership} from './modules/modals/choose-membership';
+import {playVideo} from './modules/modals/play-video';
 
 // ---------------------------------
 
@@ -19,6 +21,10 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
   });
 });
+
+
+playVideo();
+chooseMembership();
 
 // ---------------------------------
 

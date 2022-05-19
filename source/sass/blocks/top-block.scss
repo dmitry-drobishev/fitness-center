@@ -1,7 +1,7 @@
 .top-block {
   width: 100%;
   min-width: 320px;
-  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, $color-venetian-red -46.69deg, $color-dark-cerulean-2 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean-2 392.24deg);
 }
 
 .top-block__wrapper {
@@ -9,13 +9,10 @@
   margin: 0 auto;
   padding-bottom: 51px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     width: auto;
-    margin: 0 $desktop-margin-asade;
-  }
-
-  @include vp-1023 {
     margin: 0 $tablet-margin-asade;
+    padding-bottom: 82px;
   }
 
   @include vp-767 {
@@ -27,10 +24,11 @@
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-top: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
   }
 
   @include vp-767 {
@@ -45,7 +43,7 @@
     letter-spacing: 0.03em;
     color: $color-default-white;
 
-    @include vp-1023 {
+    @include vp-1199 {
       font-size: 24px;
       line-height: 24px;
       letter-spacing: 0.02em;
@@ -55,6 +53,18 @@
       font-size: 20px;
       line-height: 20px;
       letter-spacing: 0.02em;
+    }
+
+    &[href] {
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
     }
   }
 }
@@ -69,9 +79,9 @@
     width: 89px;
     height: 20px;
 
-    @include vp-1023 {
-      width: 82px;
-      height: 17px;
+    @include vp-1199 {
+      width: 83px;
+      height: 19px;
     }
 
     @include vp-767 {
@@ -84,6 +94,12 @@
 .top-block__content-wrapper {
   display: flex;
   position: relative;
+  margin-top: -4px;
+
+  @include vp-1199 {
+    justify-content: flex-end;
+    margin: 0;
+  }
 
   @include vp-767 {
     display: block;
@@ -95,12 +111,8 @@
     height: 556px;
     margin-left: 64px;
 
-    @include vp-1279 {
-      margin-left: 25px;
-    }
-
-    @include vp-1023 {
-      width: 342px;
+    @include vp-1199 {
+      width: 324px;
       height: 390px;
       margin-left: 30px;
     }
@@ -112,9 +124,9 @@
 }
 
 .top-block__title-wrapper {
-  margin-top: 122px;
+  margin-top: 115px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-top: 55px;
   }
 
@@ -127,7 +139,7 @@
     color: $color-default-white;
     text-align: right;
 
-    @include vp-1023 {
+    @include vp-1199 {
       font-size: 34px;
       line-height: 34px;
     }
@@ -149,7 +161,7 @@
     width: fit-content;
     color: $color-default-white;
 
-    @include vp-1023 {
+    @include vp-1199 {
       font-size: 86px;
       line-height: 86px;
     }
@@ -169,10 +181,10 @@
     width: fit-content;
     color: $color-default-white;
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     margin-right: -34px;
 
-    @include vp-1023 {
+    @include vp-1199 {
       margin-left: 0;
       margin-bottom: 10px;
     }
@@ -182,12 +194,17 @@
 .top-block__title-row-wrapper {
   display: flex;
   align-items: flex-end;
-  margin-top: 25px;
+  margin-top: 13px;
+
+  @include vp-1199 {
+    margin-top: 0;
+  }
 }
 
 .top-block__button {
+  width: 232px;
   display: block;
-  padding: 24px 56px;
+  padding: 20px 20px;
   border: 4px solid $color-default-white;
   width: fit-content;
   font-weight: 700;
@@ -197,31 +214,41 @@
   text-transform: uppercase;
   color: $color-default-white;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 55px;
   margin-right: 0;
   margin-left: auto;
 
-  @include vp-1023 {
-    padding: 24px 33px;
+  @include vp-1199 {
+    width: 185px;
+    padding: 20px 20px;
     margin-top: 50px;
   }
 
   @include vp-767 {
     width: 100%;
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .top-block__social-list {
   position: absolute;
-  right: 20px;
-  bottom: 40px;
+  right: -5px;
+  bottom: 37px;
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
-  @include vp-1023 {
+  @include vp-1199 {
     display: none;
   }
 
@@ -229,7 +256,7 @@
 
 .top-block__social-item {
   width: fit-content;
-  margin-top: 20px;
+  margin-top: 9px;
 
   a {
     display: block;
@@ -238,5 +265,13 @@
     text-transform: uppercase;
     color: $color-default-white;
     padding: 5px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
