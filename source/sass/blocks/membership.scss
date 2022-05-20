@@ -69,7 +69,7 @@
   padding: 0;
   list-style: none;
   justify-content: center;
-  margin-top: 53px;
+  margin-top: 34px;
   position: relative;
 
 
@@ -87,7 +87,7 @@
     width: 100%;
     height: 2px;
     background-color: $color-silver;
-    bottom: -20px;
+    bottom: -12px;
   }
 }
 
@@ -108,6 +108,7 @@
   }
 
   p {
+    margin: 0;
     font-size: 20px;
     line-height: 150%;
 
@@ -130,7 +131,7 @@
       height: 2px;
       background-color: $color-crimson-pink;
       left: 0;
-      bottom: -20px;
+      bottom: -12px;
       z-index: 100;
     }
   }
@@ -143,7 +144,7 @@
   display: grid;
   grid-template-columns: 360px 360px 360px;
   gap: 40px;
-  margin-top: 60px;
+  margin-top: 50px;
 
   @include vp-1279 {
     grid-template-columns: repeat(3, 300px);
@@ -169,11 +170,13 @@
 }
 
 .membership__option-item {
+  display: flex;
+  flex-direction: column;
   width: 360px;
   min-height: 448px;
   background-color: $color-default-white;
   z-index: 10;
-  padding: 61px 23px;
+  padding: 57px 23px 59px 23px;
   box-sizing: border-box;
   border: 7px solid transparent;
 
@@ -224,7 +227,7 @@
     font-size: 16px;
     line-height: 150%;
     margin: 0;
-    margin-top: 22px;
+    margin-top: 10px;
     text-align: center;
     color: $color-chambray-grey;
   }
@@ -238,6 +241,7 @@
       font-size: 100px;
       line-height: 150%;
       color: $color-whispe-grey;
+      margin-top: 10px;
       // opacity: 0.5;
 
       @include vp-767 {
@@ -249,7 +253,7 @@
       font-size: 60px;
       line-height: 150%;
       color: $color-egyptian-blue;
-      margin-top: -80px;
+      margin-top: -96px;
 
       @include vp-767 {
         font-size: 48px;
@@ -272,7 +276,7 @@
   display: block;
   width: 209px;
   box-sizing: border-box;
-  padding: 27px 44px;
+  padding: 25px 22px;
   border: 2px solid $color-sapphire-blue;
   font-weight: 700;
   font-size: 12px;
@@ -281,4 +285,6 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 0;
 }

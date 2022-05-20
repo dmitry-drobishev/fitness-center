@@ -17,6 +17,7 @@
 
   @include vp-767 {
     margin: 0 $mobile-margin-asade;
+    padding-bottom: 79px;
   }
 }
 
@@ -130,6 +131,10 @@
     margin-top: 55px;
   }
 
+  @include vp-767 {
+    margin-top: 73px;
+  }
+
   p {
     margin: 0;
     font-family: $ff-bebas-neue;
@@ -169,6 +174,7 @@
     @include vp-767 {
       font-size: 78px;
       line-height: 78px;
+      margin-top: 10px;
     }
   }
 
@@ -186,7 +192,12 @@
 
     @include vp-1199 {
       margin-left: 0;
-      margin-bottom: 10px;
+      margin-bottom: 13px;
+      margin-right: -25px;
+    }
+
+    @include vp-767 {
+      margin-right: -40px;
     }
   }
 }
@@ -206,7 +217,6 @@
   display: block;
   padding: 20px 20px;
   border: 4px solid $color-default-white;
-  width: fit-content;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -221,11 +231,12 @@
   @include vp-1199 {
     width: 185px;
     padding: 20px 20px;
-    margin-top: 50px;
+    margin-top: 45px;
   }
 
   @include vp-767 {
     width: 100%;
+    margin-top: 43px;
   }
 
   &:hover {
