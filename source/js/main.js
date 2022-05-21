@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {chooseMembership} from './modules/modals/choose-membership';
 import {playVideo} from './modules/modals/play-video';
+import {validForm} from './modules/modals/valid-form';
 
 // ---------------------------------
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 playVideo();
 chooseMembership();
+validForm();
 
 // ---------------------------------
 
