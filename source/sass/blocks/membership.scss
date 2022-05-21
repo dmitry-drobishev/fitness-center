@@ -1,7 +1,7 @@
 .membership {
   background-color: $color-ghost-white;
   position: relative;
-  z-index: -10;
+  // z-index: -10;
 
   img {
     position: absolute;
@@ -176,6 +176,8 @@
   padding: 57px 23px 59px 23px;
   box-sizing: border-box;
   border: 7px solid transparent;
+  // border-image: linear-gradient(120deg, rgba(209, 10, 66, 1), rgba(0, 53, 159, 1));
+  // border-image-slice: 1;
 
   @include vp-1199 {
     width: 442px;

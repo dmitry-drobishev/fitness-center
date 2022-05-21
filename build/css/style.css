@@ -1130,7 +1130,6 @@ button,
 .membership {
   background-color: #f8f9fc;
   position: relative;
-  z-index: -10;
 }
 
 .membership img {
@@ -1498,13 +1497,29 @@ button,
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  margin-top: 62px;
+  margin-top: 50px;
 }
 
 .trainers__item {
   width: 260px;
   height: 294px;
   position: relative;
+}
+
+.trainers__item--show {
+  display: none;
+}
+
+.trainers__item:focus .trainers__trainer-preview h3 {
+  display: none;
+}
+
+.trainers__item:focus .trainers__trainer-information {
+  display: block;
+}
+
+.trainers__item:hover .trainers__trainer-preview h3 {
+  display: none;
 }
 
 .trainers__item:hover .trainers__trainer-information {
@@ -1517,6 +1532,7 @@ button,
   line-height: 100%;
   color: #ffffff;
   margin: 0;
+  text-align: center;
 }
 
 .trainers__trainer-preview {
@@ -1529,7 +1545,7 @@ button,
   margin: 0;
   text-align: center;
   width: 100%;
-  padding: 20px;
+  padding: 27px 20px;
   bottom: 0;
 }
 
@@ -1546,8 +1562,9 @@ button,
   z-index: 100;
   position: absolute;
   width: 100%;
+  min-height: 100%;
   top: 0;
-  padding: 58px;
+  padding: 57px 30px 30px 30px;
   background-color: rgba(16, 38, 84, 0.89);
 }
 
@@ -1556,19 +1573,21 @@ button,
   font-size: 16px;
   line-height: 150%;
   color: #b6bdcc;
+  text-align: center;
 }
 
 .trainers__trainer-information ul {
   margin: 0;
   padding: 0;
-  margin-top: 45px;
+  padding-left: 40px;
+  margin-top: 33px;
   list-style: none;
 }
 
 .trainers__trainer-information li {
   font-size: 14px;
   line-height: 150%;
-  margin-top: 24px;
+  margin-top: 13px;
   position: relative;
   color: #ffffff;
 }
@@ -1647,7 +1666,7 @@ button,
   -webkit-column-gap: 60px;
   -moz-column-gap: 60px;
   column-gap: 60px;
-  margin-top: 79px;
+  margin-top: 58px;
 }
 
 .advantages__center-item {
@@ -1659,7 +1678,6 @@ button,
   grid-column: 2 / 3;
   background-color: #2e35ac;
   padding: 65px 34px;
-  min-height: 150px;
 }
 
 .advantages__center-item p {
@@ -1704,22 +1722,22 @@ button,
   display: grid;
   -ms-grid-columns: auto 1fr;
   grid-template-columns: auto 1fr;
-  -webkit-column-gap: 25px;
-  -moz-column-gap: 25px;
-  column-gap: 25px;
+  -webkit-column-gap: 32px;
+  -moz-column-gap: 32px;
+  column-gap: 32px;
 }
 
 .advantages__item--first-line {
-  padding-bottom: 83px;
+  padding-bottom: 78px;
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 }
 
 .advantages__item--second-line {
-  padding-top: 83px;
+  padding-top: 70px;
 }
 
 .advantages__item--first-column {
-  padding-left: 24px;
+  padding-left: 26px;
 }
 
 .advantages__item h3 {
@@ -1727,6 +1745,7 @@ button,
   font-size: 22px;
   line-height: 150%;
   margin: 0;
+  margin-top: 2px;
 }
 
 .advantages__item p {
@@ -1749,6 +1768,7 @@ button,
   line-height: 100%;
   color: #2e35ac;
   margin: 0;
+  margin-top: -2px;
 }
 
 .advantages__item span {
@@ -1756,6 +1776,7 @@ button,
   font-weight: 300;
   font-size: 16px;
   line-height: 140%;
+  margin-top: 5px;
 }
 
 .actions {
@@ -2319,48 +2340,6 @@ button,
 }
 
 @media (max-width: 1279px) {
-  .trainers {
-    margin: 0 30px;
-  }
-
-  .trainers__wrapper {
-    width: auto;
-  }
-
-  .trainers__list {
-    gap: 20px;
-  }
-
-  .trainers__item {
-    width: auto;
-  }
-
-  .trainers__trainer-preview img {
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
-
-  .trainers__button--back {
-    margin-right: 20px;
-  }
-
-  .trainers__button--next {
-    margin-left: 20px;
-  }
-
-  .advantages__wrapper {
-    width: auto;
-    margin: 0 30px;
-  }
-
-  .advantages__list {
-    -ms-grid-columns: 1fr 240px 1fr;
-    grid-template-columns: 1fr 240px 1fr;
-    -webkit-column-gap: 45px;
-    -moz-column-gap: 45px;
-    column-gap: 45px;
-  }
-
   .actions {
     width: auto;
     margin: 0 30px;
@@ -2626,16 +2605,6 @@ button,
     border: 2px solid #ffffff;
   }
 
-  .trainers__item:active .trainers__trainer-information {
-    display: block;
-  }
-}
-
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
-  }
-
   .trainers {
     padding-bottom: 100px;
     margin: 0 45px;
@@ -2643,17 +2612,35 @@ button,
 
   .trainers h2 {
     font-size: 42px;
+    text-align: center;
+  }
+
+  .trainers__wrapper {
+    width: auto;
   }
 
   .trainers__list {
     -ms-grid-columns: (auto)[2];
     grid-template-columns: repeat(2, auto);
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 41px;
   }
 
   .trainers__item {
     width: 268px;
+  }
+
+  .trainers__item:active .trainers__trainer-preview h3 {
+    display: none;
+  }
+
+  .trainers__item:active .trainers__trainer-information {
+    display: block;
+  }
+
+  .trainers__trainer-preview img {
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .trainers__button--back {
@@ -2721,6 +2708,12 @@ button,
 
   .advantages__item p {
     font-size: 58px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 24px;
   }
 
   .actions {
@@ -3079,7 +3072,11 @@ button,
   }
 
   .trainers__trainer-information {
-    padding: 48px;
+    padding: 48px 15px 20px 15px;
+  }
+
+  .trainers__trainer-information ul {
+    padding-left: 35px;
   }
 
   .trainers__button {
