@@ -451,6 +451,7 @@ html {
   line-height: 24px;
   font-family: "Placeholder", "Arial", sans-serif;
   color: #000000;
+  word-wrap: break-word;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -816,6 +817,8 @@ button,
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .top-block__header a {
@@ -825,6 +828,7 @@ button,
   line-height: 26px;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-left: 30px;
 }
 
 .top-block__header a[href] {
@@ -840,6 +844,8 @@ button,
 }
 
 .top-block__header-logo a {
+  margin: 0;
+  margin-right: 30px;
   display: block;
 }
 
@@ -850,9 +856,11 @@ button,
 }
 
 .top-block__content-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 396px 600px;
+  grid-template-columns: 396px 600px;
+  gap: 64px;
   position: relative;
   margin-top: -4px;
 }
@@ -861,11 +869,11 @@ button,
   display: block;
   width: 500px;
   height: 556px;
-  margin-left: 64px;
 }
 
 .top-block__title-wrapper {
   margin-top: 115px;
+  width: 100%;
 }
 
 .top-block__title-wrapper p {
@@ -1122,12 +1130,13 @@ button,
 .membership {
   background-color: #f8f9fc;
   position: relative;
+  z-index: -10;
 }
 
 .membership img {
   position: absolute;
-  width: 321px;
-  height: 552px;
+  width: 285px;
+  height: 493px;
   right: 0;
   bottom: -150px;
 }
@@ -1171,7 +1180,7 @@ button,
   width: 100%;
   height: 2px;
   background-color: #c4c4c4;
-  bottom: -12px;
+  bottom: -15px;
 }
 
 .membership__period-item {
@@ -1200,7 +1209,7 @@ button,
   height: 2px;
   background-color: #d10a42;
   left: 0;
-  bottom: -12px;
+  bottom: -15px;
   z-index: 100;
 }
 
@@ -1347,18 +1356,43 @@ button,
 }
 
 .promo__information-date-time-wrapper h3 {
+  font-weight: 400;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 100%;
   color: #ffffff;
   margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .promo__information-date-time-wrapper p {
   font-weight: 700;
   font-size: 40px;
-  line-height: 150%;
+  line-height: 100%;
   color: #ffffff;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+
+.promo__information-date-time-wrapper p::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  top: -5px;
+  left: 0;
 }
 
 .promo__information-date-time-wrapper span {
@@ -1366,11 +1400,19 @@ button,
   font-size: 14px;
   line-height: 150%;
   color: #ffffff;
+  margin-left: 7px;
 }
 
 .promo__information-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #ed0233;
-  padding: 87px 78px;
+  padding: 87px 78px 85px 78px;
 }
 
 .promo__information-wrapper h2 {
@@ -1383,11 +1425,21 @@ button,
   margin: 0;
 }
 
-.promo__information-wrapper p {
+.promo__information-wrapper h4 {
   font-size: 18px;
   line-height: 150%;
   color: #ffffff;
   margin: 0;
+  font-weight: 400;
+  margin-top: 3px;
+}
+
+.promo__information-time {
+  margin-top: 23px;
+}
+
+.promo__information-time p {
+  margin-top: 13px;
 }
 
 .promo__button {
@@ -1404,6 +1456,8 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 0;
+  margin-top: auto;
 }
 
 .trainers {
@@ -2265,37 +2319,6 @@ button,
 }
 
 @media (max-width: 1279px) {
-  .membership__wrapper {
-    width: auto;
-    margin: 0 30px;
-  }
-
-  .membership__option-list {
-    -ms-grid-columns: (300px)[3];
-    grid-template-columns: repeat(3, 300px);
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    gap: 28px;
-  }
-
-  .membership__option-item {
-    width: 300px;
-  }
-
-  .promo__wrapper {
-    width: auto;
-    margin: 0 30px;
-    -ms-grid-columns: 500px auto;
-    grid-template-columns: 500px auto;
-  }
-
-  .promo__wrapper img {
-    width: auto;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
-
   .trainers {
     margin: 0 30px;
   }
@@ -2389,16 +2412,15 @@ button,
   }
 
   .top-block__content-wrapper {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     margin: 0;
   }
 
   .top-block__content-wrapper img {
     width: 324px;
     height: 390px;
-    margin-left: 30px;
   }
 
   .top-block__title-wrapper {
@@ -2493,23 +2515,15 @@ button,
     height: 73px;
   }
 
-  .trainers__item:active .trainers__trainer-information {
-    display: block;
-  }
-}
-
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
-  }
-
   .membership img {
-    width: 289px;
-    height: 345px;
-    bottom: -100px;
+    width: 349px;
+    height: 443px;
+    bottom: -125px;
+    z-index: -1;
   }
 
   .membership__wrapper {
+    width: auto;
     padding: 100px 0;
     margin: 0 45px;
   }
@@ -2520,7 +2534,7 @@ button,
   }
 
   .membership__period-list {
-    margin-top: 45px;
+    margin-top: 28px;
   }
 
   .membership__period-item {
@@ -2532,18 +2546,12 @@ button,
   }
 
   .membership__option-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 0;
-    margin-top: 65px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    display: block;
+    margin-top: 56px;
+  }
+
+  .membership__option-list--disable {
+    display: none;
   }
 
   .membership__option-item {
@@ -2558,34 +2566,42 @@ button,
   }
 
   .promo__wrapper {
+    width: auto;
     margin: 0 45px;
     -ms-grid-columns: 292px 386px;
     grid-template-columns: 292px 386px;
   }
 
   .promo__wrapper img {
+    width: auto;
     width: 386px;
     height: 292px;
   }
 
   .promo__information-date-time-wrapper {
-    margin-left: 45px;
+    margin-left: 30px;
   }
 
   .promo__information-date-time-wrapper h3 {
     font-size: 12px;
   }
 
+  .promo__information-date-time-wrapper p::before {
+    top: -2px;
+  }
+
   .promo__information-date-time-wrapper p {
     font-size: 24px;
+    margin-top: 5px;
   }
 
   .promo__information-date-time-wrapper span {
     font-size: 10px;
+    margin-left: 4px;
   }
 
   .promo__information-wrapper {
-    padding: 51px 45px;
+    padding: 51px 45px 49px 45px;
   }
 
   .promo__information-wrapper h2 {
@@ -2593,15 +2609,31 @@ button,
     line-height: 52px;
   }
 
-  .promo__information-wrapper p {
+  .promo__information-wrapper h4 {
     font-size: 12px;
+    margin-top: -1px;
+  }
+
+  .promo__information-time {
+    margin-top: 7px;
   }
 
   .promo__button {
-    width: 202px;
-    padding: 16px;
+    width: 204px;
+    padding: 12px;
     font-size: 10px;
     line-height: 12px;
+    border: 2px solid #ffffff;
+  }
+
+  .trainers__item:active .trainers__trainer-information {
+    display: block;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 24px;
   }
 
   .trainers {
@@ -2957,7 +2989,7 @@ button,
   }
 
   .membership__period-list {
-    margin-top: 35px;
+    margin-top: 20px;
   }
 
   .membership__period-item {
@@ -2969,13 +3001,14 @@ button,
   }
 
   .membership__option-list {
-    margin-top: 55px;
+    margin-top: 49px;
   }
 
   .membership__option-item {
     width: 100%;
     min-height: 384px;
     margin-top: 35px;
+    padding: 44px 23px 46px 23px;
   }
 
   .membership__option-item h3 {
@@ -2989,6 +3022,7 @@ button,
 
   .membership__option-item span:nth-of-type(2) {
     font-size: 48px;
+    margin-top: -76px;
   }
 
   .membership__option-item span svg {
@@ -3014,6 +3048,16 @@ button,
 
   .promo__information-date-time-wrapper {
     margin-left: 29px;
+  }
+
+  .promo__information-wrapper {
+    display: block;
+    padding: 51px 43px 51px 43px;
+  }
+
+  .promo__button {
+    width: 100%;
+    margin-top: 29px;
   }
 
   .trainers {

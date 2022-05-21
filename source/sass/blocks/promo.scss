@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 120px 0;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding: 100px 0;
   }
 
@@ -17,13 +17,8 @@
   grid-template-columns: 500px 660px;
   justify-content: center;
 
-  @include vp-1279 {
+  @include vp-1199 {
     width: auto;
-    margin: 0 $desktop-margin-asade;
-    grid-template-columns: 500px auto;
-  }
-
-  @include vp-1023 {
     margin: 0 $tablet-margin-asade;
     grid-template-columns: 292px 386px;
   }
@@ -39,12 +34,8 @@
     height: 500px;
     background-color: $color-sapphire-blue;
 
-    @include vp-1279 {
+    @include vp-1199 {
       width: auto;
-      object-fit: cover;
-    }
-
-    @include vp-1023 {
       width: 386px;
       height: 292px;
     }
@@ -64,8 +55,8 @@
 .promo__information-date-time-wrapper {
   margin-left: 50px;
 
-  @include vp-1023 {
-    margin-left: 45px;
+  @include vp-1199 {
+    margin-left: 30px;
   }
 
   @include vp-767 {
@@ -73,12 +64,14 @@
   }
 
   h3 {
+    font-weight: 400;
     font-size: 18px;
-    line-height: 150%;
+    line-height: 100%;
     color: $color-default-white;
     margin: 0;
+    width: fit-content;
 
-    @include vp-1023 {
+    @include vp-1199 {
       font-size: 12px;
     }
   }
@@ -86,12 +79,33 @@
   p {
     font-weight: 700;
     font-size: 40px;
-    line-height: 150%;
+    line-height: 100%;
     color: $color-default-white;
     margin: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: fit-content;
+    position: relative;
 
-    @include vp-1023 {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: $color-default-white;
+      top: -5px;
+      left: 0;
+
+      @include vp-1199 {
+        top: -2px;
+      }
+    }
+
+
+    @include vp-1199 {
       font-size: 24px;
+      margin-top: 5px;
     }
   }
 
@@ -100,19 +114,28 @@
     font-size: 14px;
     line-height: 150%;
     color: $color-default-white;
+    margin-left: 7px;
 
-    @include vp-1023 {
+    @include vp-1199 {
       font-size: 10px;
+      margin-left: 4px;
     }
   }
 }
 
 .promo__information-wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: $color-torch-red;
-  padding: 87px 78px;
+  padding: 87px 78px 85px 78px;
 
-  @include vp-1023 {
-    padding: 51px 45px;
+  @include vp-1199 {
+    padding: 51px 45px 49px 45px;
+  }
+
+  @include vp-767 {
+    display: block;
+    padding: 51px 43px 51px 43px;
   }
 
   h2 {
@@ -124,21 +147,36 @@
     color: $color-default-white;
     margin: 0;
 
-    @include vp-1023 {
+    @include vp-1199 {
       font-size: 52px;
       line-height: 52px;
     }
   }
 
-  p {
+   h4 {
     font-size: 18px;
     line-height: 150%;
     color: $color-default-white;
     margin: 0;
+    font-weight: 400;
+    margin-top: 3px;
 
-    @include vp-1023 {
+    @include vp-1199 {
       font-size: 12px;
+      margin-top: -1px;
     }
+  }
+}
+
+.promo__information-time {
+  margin-top: 23px;
+
+  @include vp-1199 {
+    margin-top: 7px;
+  }
+
+  p {
+    margin-top: 13px;
   }
 }
 
@@ -155,11 +193,19 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-default-white;
+  margin-bottom: 0;
+  margin-top: auto;
 
-  @include vp-1023 {
-    width: 202px;
-    padding: 16px;
+  @include vp-1199 {
+    width: 204px;
+    padding: 12px;
     font-size: 10px;
     line-height: 12px;
+    border: 2px solid $color-default-white;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-top: 29px;
   }
 }
