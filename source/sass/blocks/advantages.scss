@@ -5,12 +5,12 @@
 .advantages__wrapper {
   width: 1040px;
   margin: 0 auto;
-  padding: 120px 0;
+  padding: 120px 0 118px 0;
 
   @include vp-1199 {
     width: auto;
     margin: 0 $tablet-margin-asade;
-    padding: 100px 0;
+    padding: 98px 0 96px 0;
   }
 
   @include vp-767 {
@@ -46,11 +46,13 @@
   grid-template-columns: 340px 240px 340px;
   column-gap: 60px;
   margin-top: 58px;
+  align-items: start;
 
   @include vp-1199 {
     grid-template-columns: 1fr 1fr;
-    margin-top: 60px;
-    row-gap: 50px;
+    margin-top: 38px;
+    row-gap: 44px;
+    column-gap: 32px;
   }
 
   @include vp-767 {
@@ -61,16 +63,20 @@
 .advantages__center-item {
   grid-row: 1 / 3;
   grid-column: 2 / 3;
-  background-color: $color-persian-blue;
-  padding: 65px 34px;
+  background-color: $color-resolution-blue;
+  padding: 52px 34px;
+  min-height: 307px;
+  position: relative;
+  top: 10px;
 
   @include vp-1199 {
+    position: static;
     grid-row: 2 / 3;
     grid-column: 1 / 3;
-    width: 422px;
+    width: 442px;
     min-height: 239px;
     margin: 0 auto;
-    padding: 45px;
+    padding: 33px 120px;
   }
 
   @include vp-767 {
@@ -100,6 +106,7 @@
 
       @include vp-1199 {
         font-size: 22px;
+        margin-top: 5px;
       }
     }
   }
@@ -110,10 +117,10 @@
     line-height: 150%;
     text-align: center;
     color: $color-default-white;
-    margin-top: 50px;
+    margin-top: 39px;
 
     @include vp-1199 {
-      margin-top: 30px;
+      margin-top: 19px;
     }
 
     @include vp-767 {
@@ -126,6 +133,10 @@
   display: grid;
   grid-template-columns: auto 1fr;
   column-gap: 32px;
+
+  @include vp-1199 {
+    column-gap: 30px;
+  }
 
   @include vp-767 {
     display: block;
@@ -159,6 +170,11 @@
     }
   }
 
+  &--first-col-second-row {
+    padding-left: 20px;
+    column-gap: 30px;
+  }
+
   h3 {
     font-weight: 700;
     font-size: 22px;
@@ -168,6 +184,7 @@
 
     @include vp-1199 {
       font-size: 20px;
+      margin-top: 0;
     }
 
     @include vp-767 {
@@ -212,6 +229,10 @@
     font-size: 16px;
     line-height: 140%;
     margin-top: 5px;
+
+    @include vp-1199 {
+      margin-top: 0;
+    }
 
     @include vp-767 {
       text-align: center;

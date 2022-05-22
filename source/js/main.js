@@ -28,6 +28,15 @@ playVideo();
 chooseMembership();
 validForm();
 
+
+// import Swiper from 'swiper';
+// import 'swiper/css';
+
+// function newSwiper() {
+//   const swiper = new Swiper('.swiper');
+// }
+
+// newSwiper();
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
