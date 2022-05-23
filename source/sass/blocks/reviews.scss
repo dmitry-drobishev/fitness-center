@@ -1,6 +1,7 @@
 .reviews {
   margin: 0 auto;
   margin-bottom: 121px;
+  width: 680px;
 
   @include vp-1023 {
     margin-bottom: 100px;
@@ -30,9 +31,7 @@
 }
 
 .reviews__slider-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 560px;
   margin-top: 52px;
 
   @include vp-767 {
@@ -51,6 +50,7 @@
   padding: 62px;
   background-color: $color-resolution-blue;
   box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  margin: 0 auto;
 
   @include vp-1023 {
     width: 566px;
@@ -117,6 +117,9 @@
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  position: absolute;
+  top: 60%;
+  z-index: 10;
 
   @include vp-767 {
     width: 10px;
@@ -126,7 +129,7 @@
 
   &--back {
     background-image: url("../img/svg/arrow-back.svg");
-    margin-right: 40px;
+    left: 4px;
 
     @include vp-767 {
       margin-right: 22px;
@@ -135,7 +138,7 @@
 
   &--next {
     background-image: url("../img/svg/arrow-next.svg");
-    margin-left: 40px;
+    right: 4px;
 
     @include vp-767 {
       margin-left: 22px;

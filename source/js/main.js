@@ -1,8 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {chooseMembership} from './modules/modals/choose-membership';
-import {playVideo} from './modules/modals/play-video';
-import {validForm} from './modules/modals/valid-form';
+// import {chooseMembership} from './modules/modals/choose-membership';
+// import {playVideo} from './modules/modals/play-video';
+// import {validForm} from './modules/modals/valid-form';
+
 
 // ---------------------------------
 
@@ -23,20 +24,28 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// core version + navigation, pagination modules:
+import Swiper, {Navigation, Pagination} from 'swiper';
+// import Swiper and modules styles
 
-playVideo();
-chooseMembership();
-validForm();
+const reviewsSwiper = new Swiper('.reviews', {
+  // configure Swiper to use modules
+  modules: [Navigation, Pagination],
+
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--back',
+  },
+
+});
 
 
-// import Swiper from 'swiper';
-// import 'swiper/css';
+// playVideo();
+// chooseMembership();
+// validForm();
 
-// function newSwiper() {
-//   const swiper = new Swiper('.swiper');
-// }
-
-// newSwiper();
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
