@@ -1,12 +1,9 @@
 .contacts {
-  padding: 70px 30px 70px 120px;
+  padding: 70px 30px 63px 120px;
+  border-top: 1px solid $color-light-slate-grey;
 
-  @include vp-1279 {
-    padding-right: $desktop-margin-asade;
-    padding-left: $desktop-margin-asade;
-  }
-
-  @include vp-1023 {
+  @include vp-1199 {
+    border: none;
     padding: 70px 0;
     width: 472px;
     margin: 0 auto;
@@ -24,7 +21,7 @@
     letter-spacing: 0.03em;
     margin: 0;
 
-    @include vp-1023 {
+    @include vp-1199 {
       font-size: 42px;
     }
 
@@ -36,10 +33,11 @@
 
 .contacts__information-wrapper {
   display: grid;
-  grid-template-columns: 234px 1fr;
-  margin-top: 57px;
+  grid-template-columns: 231px 1fr;
+  margin-top: 38px;
+  margin-left: 4px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-top: 50px;
     grid-template-columns: 267px 1fr;
   }
@@ -66,7 +64,7 @@
   &--second-col {
     margin-left: 60px;
 
-    @include vp-1023 {
+    @include vp-1199 {
       margin-left: 48px;
     }
 
@@ -77,9 +75,9 @@
 }
 
 .contacts__item {
-  margin-top: 30px;
+  margin-top: 17px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-top: 35px;
   }
 
@@ -97,7 +95,7 @@
     line-height: 150%;
     margin: 0;
 
-    @include vp-1023 {
+    @include vp-1199 {
       font-size: 20px;
     }
   }
@@ -106,9 +104,9 @@
     font-size: 14px;
     line-height: 21px;
     margin: 0;
-    margin-top: 15px;
+    margin-top: 4px;
 
-    @include vp-1023 {
+    @include vp-1199 {
       font-size: 18px;
       line-height: 152%;
     }

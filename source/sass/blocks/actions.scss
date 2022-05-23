@@ -3,18 +3,14 @@
   margin: 0 auto;
   padding: 120px 0;
 
-  @include vp-1279 {
+  @include vp-1199 {
     width: auto;
-    margin: 0 $desktop-margin-asade;
-  }
-
-  @include vp-1023 {
     margin: 0 $tablet-margin-asade;
-    padding: 100px 0;
+    padding: 97px 0 101px;
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 61px 0 70px;
     margin: 0 $mobile-margin-asade;
   }
 
@@ -27,12 +23,8 @@
     margin: 0;
     text-align: center;
 
-    @include vp-1023 {
+    @include vp-1199 {
       font-size: 42px;
-    }
-
-    @include vp-767 {
-      font-size: 32px;
     }
 
     @include vp-767 {
@@ -45,11 +37,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
-  margin-top: 62px;
+  margin-top: 49px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     display: block;
-    margin-top: 50px;
+    margin-top: 35px;
+  }
+
+  @include vp-767 {
+    margin-top: 34px;
   }
 }
 
@@ -57,12 +53,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  @include vp-1279 {
+  @include vp-1199 {
     grid-template-columns: 1fr auto;
-    min-width: 520px;
-  }
-
-  @include vp-1023 {
     min-width: auto;
   }
 
@@ -76,7 +68,7 @@
     height: 462px;
     background-color: rgb(50, 98, 202);
 
-    @include vp-1023 {
+    @include vp-1199 {
       width: 399px;
       height: 462px;
     }
@@ -91,10 +83,15 @@
 }
 
 .actions__price {
-  padding: 45px;
+  padding: 34px 45px 45px;
   background-color: $color-torch-red;
   display: flex;
   flex-direction: column;
+
+  @include vp-767 {
+    min-height: 299px;
+    padding: 34px 20px 45px 20px;
+  }
 
   p {
     display: flex;
@@ -105,6 +102,10 @@
     line-height: 156%;
     color: $color-default-white;
 
+    @include vp-1199 {
+      text-align: left;
+    }
+
     @include vp-767 {
       text-align: center;
     }
@@ -113,6 +114,11 @@
       font-weight: 700;
       font-size: 70px;
       line-height: 100%;
+      margin-top: -6px;
+
+      @include vp-1199 {
+        text-align: left;
+      }
 
       @include vp-767 {
         text-align: center;
@@ -126,14 +132,17 @@
     font-size: 18px;
     line-height: 140%;
     color: $color-default-white;
-    margin-top: 35px;
+    margin-top: 18px;
+    margin-bottom: 10px;
 
-    @include vp-1023 {
-      text-align: center;
+    @include vp-1199 {
+      text-align: left;
+      margin-top: 19px;
     }
 
     @include vp-767 {
-      margin-top: 30px;
+      text-align: center;
+      margin-top: 3px;
     }
   }
 
@@ -146,8 +155,7 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $color-default-white;
-    padding-bottom: 5px;
-    border-bottom: 2px solid $color-default-white;
+    border-bottom: 1px solid $color-default-white;
     margin-bottom: 0;
     margin-top: auto;
 
@@ -163,7 +171,7 @@
   margin: 0;
   padding: 0;
 
-  @include vp-1023 {
+  @include vp-1199 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -181,16 +189,18 @@
   border: 7px solid transparent;
   border-image: linear-gradient(120deg, rgba(209, 10, 66, 1), rgba(0, 53, 159, 1));
   border-image-slice: 1;
-  padding: 28px;
+  padding: 25px 28px 29px;
   margin-top: 40px;
   min-height: 211px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-top: 0;
+    padding-bottom: 27px;
   }
 
   @include vp-767 {
     margin-top: 30px;
+    padding: 36px 30px 38px;
   }
 
   &:first-of-type {
@@ -203,13 +213,21 @@
     line-height: 100%;
     color: $color-resolution-blue;
     margin: 0;
+
+    @include vp-767 {
+      text-align: center;
+    }
   }
 
   p {
     font-size: 16px;
     line-height: 140%;
     color: $color-resolution-blue;
-    margin: 20px 0 10px 0;
+    margin: 9px 0 10px 0;
+
+    @include vp-767 {
+      text-align: center;
+    }
   }
 
   a {
@@ -221,10 +239,18 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $color-resolution-blue;
-    padding-bottom: 5px;
-    border-bottom: 2px solid $color-resolution-blue;
+    border-bottom: 1px solid $color-resolution-blue;
     margin-bottom: 0;
     margin-top: auto;
+
+    @include vp-1199 {
+      padding-bottom: 2px;
+    }
+
+    @include vp-767 {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 

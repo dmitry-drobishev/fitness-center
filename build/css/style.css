@@ -2353,7 +2353,7 @@ button,
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
-  margin-top: 62px;
+  margin-top: 49px;
 }
 
 .actions__basic-action {
@@ -2371,7 +2371,7 @@ button,
 }
 
 .actions__price {
-  padding: 45px;
+  padding: 34px 45px 45px;
   background-color: #ed0233;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2401,6 +2401,7 @@ button,
   font-weight: 700;
   font-size: 70px;
   line-height: 100%;
+  margin-top: -6px;
 }
 
 .actions__price span {
@@ -2409,7 +2410,8 @@ button,
   font-size: 18px;
   line-height: 140%;
   color: #ffffff;
-  margin-top: 35px;
+  margin-top: 18px;
+  margin-bottom: 10px;
 }
 
 .actions__price a {
@@ -2423,8 +2425,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   margin-bottom: 0;
   margin-top: auto;
 }
@@ -2447,7 +2448,7 @@ button,
   -o-border-image: -o-linear-gradient(330deg, #d10a42, #00359f);
   border-image: linear-gradient(120deg, #d10a42, #00359f);
   border-image-slice: 1;
-  padding: 28px;
+  padding: 25px 28px 29px;
   margin-top: 40px;
   min-height: 211px;
 }
@@ -2468,7 +2469,7 @@ button,
   font-size: 16px;
   line-height: 140%;
   color: #1c3374;
-  margin: 20px 0 10px 0;
+  margin: 9px 0 10px 0;
 }
 
 .actions__item a {
@@ -2482,8 +2483,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #1c3374;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #1c3374;
+  border-bottom: 1px solid #1c3374;
   margin-bottom: 0;
   margin-top: auto;
 }
@@ -2506,7 +2506,7 @@ button,
 
 .reviews__slider-wrapper {
   width: 560px;
-  margin-top: 52px;
+  margin-top: 50px;
 }
 
 .reviews__card {
@@ -2521,7 +2521,7 @@ button,
   min-height: 242px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 62px;
+  padding: 54px 62px;
   background-color: #1c3374;
   -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
   box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
@@ -2538,7 +2538,7 @@ button,
 
 .reviews__card p {
   margin: 0;
-  margin-top: 25px;
+  margin-top: 9px;
   font-size: 16px;
   line-height: 140%;
   color: #ffffff;
@@ -2551,6 +2551,7 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
+  margin-top: 8px;
 }
 
 .reviews__img-wrapper img {
@@ -2562,7 +2563,7 @@ button,
 .reviews__button {
   background-color: transparent;
   border: none;
-  width: 16px;
+  width: 17px;
   height: 32px;
   cursor: pointer;
   background-repeat: no-repeat;
@@ -2597,7 +2598,8 @@ button,
 }
 
 .contacts {
-  padding: 70px 30px 70px 120px;
+  padding: 70px 30px 63px 120px;
+  border-top: 1px solid #74819c;
 }
 
 .contacts h2 {
@@ -2611,9 +2613,10 @@ button,
 .contacts__information-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 234px 1fr;
-  grid-template-columns: 234px 1fr;
-  margin-top: 57px;
+  -ms-grid-columns: 231px 1fr;
+  grid-template-columns: 231px 1fr;
+  margin-top: 38px;
+  margin-left: 4px;
 }
 
 .contacts__list {
@@ -2633,7 +2636,7 @@ button,
 }
 
 .contacts__item {
-  margin-top: 30px;
+  margin-top: 17px;
 }
 
 .contacts__item:first-of-type {
@@ -2651,12 +2654,12 @@ button,
   font-size: 14px;
   line-height: 21px;
   margin: 0;
-  margin-top: 15px;
+  margin-top: 4px;
 }
 
 .free {
   background-color: #102654;
-  padding: 70px 170px 70px 30px;
+  padding: 62px 170px 60px 30px;
 }
 
 .free h2 {
@@ -2686,6 +2689,8 @@ button,
   line-height: 16px;
   color: #ffffff;
   background-color: transparent;
+  padding: 0;
+  padding-bottom: 5px;
 }
 
 .free__form input::-webkit-input-placeholder {
@@ -2737,14 +2742,14 @@ button,
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 50px;
+  margin-top: 31px;
 }
 
 .free__button {
   display: block;
   width: 100%;
-  margin-top: 30px;
-  padding: 18px 30px;
+  margin-top: 29px;
+  padding: 16px 30px;
   border: 3px solid #ffffff;
   font-weight: 700;
   font-size: 14px;
@@ -2887,27 +2892,6 @@ button,
 }
 
 @media (max-width: 1279px) {
-  .actions {
-    width: auto;
-    margin: 0 30px;
-  }
-
-  .actions__basic-action {
-    -ms-grid-columns: 1fr auto;
-    grid-template-columns: 1fr auto;
-    min-width: 520px;
-  }
-
-  .contacts {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
-  .free {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
   .page-footer__wrapper {
     width: auto;
     margin: 0 30px;
@@ -3201,7 +3185,7 @@ button,
   .advantages__wrapper {
     width: auto;
     margin: 0 45px;
-    padding: 98px 0 96px 0;
+    padding: 98px 0 94px 0;
   }
 
   .advantages__wrapper h2 {
@@ -3272,16 +3256,11 @@ button,
   .advantages__item span {
     margin-top: 0;
   }
-}
-
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
-  }
 
   .actions {
+    width: auto;
     margin: 0 45px;
-    padding: 100px 0;
+    padding: 97px 0 101px;
   }
 
   .actions h2 {
@@ -3290,10 +3269,12 @@ button,
 
   .actions__wrapper {
     display: block;
-    margin-top: 50px;
+    margin-top: 35px;
   }
 
   .actions__basic-action {
+    -ms-grid-columns: 1fr auto;
+    grid-template-columns: 1fr auto;
     min-width: auto;
   }
 
@@ -3302,8 +3283,17 @@ button,
     height: 462px;
   }
 
+  .actions__price p {
+    text-align: left;
+  }
+
+  .actions__price p span {
+    text-align: left;
+  }
+
   .actions__price span {
-    text-align: center;
+    text-align: left;
+    margin-top: 19px;
   }
 
   .actions__list {
@@ -3317,9 +3307,15 @@ button,
 
   .actions__item {
     margin-top: 0;
+    padding-bottom: 27px;
+  }
+
+  .actions__item a {
+    padding-bottom: 2px;
   }
 
   .reviews {
+    width: 686px;
     margin-bottom: 100px;
   }
 
@@ -3327,16 +3323,21 @@ button,
     font-size: 42px;
   }
 
-  .reviews__card {
-    width: 566px;
-    padding: 62px 65px;
+  .reviews__slider-wrapper {
+    margin-top: 40px;
   }
 
-  .free-contacts-wrapper {
-    display: block;
+  .reviews__card {
+    width: 566px;
+    padding-left: 65px;
+  }
+
+  .reviews__button {
+    top: 58%;
   }
 
   .contacts {
+    border: none;
     padding: 70px 0;
     width: 472px;
     margin: 0 auto;
@@ -3387,6 +3388,16 @@ button,
     -ms-grid-columns: 206px 206px;
     grid-template-columns: 206px 206px;
     gap: 60px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .free-contacts-wrapper {
+    display: block;
   }
 
   .page-footer__logo svg {
@@ -3723,7 +3734,7 @@ button,
   }
 
   .actions {
-    padding: 70px 0;
+    padding: 61px 0 70px;
     margin: 0 15px;
   }
 
@@ -3731,8 +3742,8 @@ button,
     font-size: 32px;
   }
 
-  .actions h2 {
-    font-size: 32px;
+  .actions__wrapper {
+    margin-top: 34px;
   }
 
   .actions__basic-action {
@@ -3748,6 +3759,11 @@ button,
     object-position: 100% 0%;
   }
 
+  .actions__price {
+    min-height: 299px;
+    padding: 34px 20px 45px 20px;
+  }
+
   .actions__price p {
     text-align: center;
   }
@@ -3757,7 +3773,8 @@ button,
   }
 
   .actions__price span {
-    margin-top: 30px;
+    text-align: center;
+    margin-top: 3px;
   }
 
   .actions__price a {
@@ -3771,9 +3788,25 @@ button,
 
   .actions__item {
     margin-top: 30px;
+    padding: 36px 30px 38px;
+  }
+
+  .actions__item h3 {
+    text-align: center;
+  }
+
+  .actions__item p {
+    text-align: center;
+  }
+
+  .actions__item a {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .reviews {
+    width: auto;
+    margin: 0 15px;
     margin-bottom: 70px;
   }
 
@@ -3782,52 +3815,61 @@ button,
   }
 
   .reviews__slider-wrapper {
-    margin: 0 15px;
-    margin-top: 50px;
+    margin-top: 42px;
   }
 
   .reviews__card {
-    -ms-grid-columns: 68px auto;
-    grid-template-columns: 68px auto;
+    min-height: 335px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: auto;
-    -webkit-column-gap: 15px;
-    -moz-column-gap: 15px;
-    column-gap: 15px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 40px 25px;
+    -webkit-column-gap: 9px;
+    -moz-column-gap: 9px;
+    column-gap: 9px;
+    padding: 40px 23px 20px 23px;
+    margin: 0 32px;
+  }
+
+  .reviews__card h3 {
+    line-height: 130%;
+    margin-left: 6px;
+    margin-top: 8px;
   }
 
   .reviews__card p {
-    margin-top: 20px;
+    margin-top: 1px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
+    text-align: center;
   }
 
   .reviews__img-wrapper {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
+    margin-top: 0;
   }
 
   .reviews__img-wrapper img {
     width: 68px;
     height: 68px;
+    margin-right: 0;
+    margin-left: auto;
   }
 
   .reviews__button {
+    top: 57%;
     width: 10px;
     height: 19px;
   }
 
   .reviews__button--back {
-    margin-right: 22px;
+    left: 1;
   }
 
   .reviews__button--next {
-    margin-left: 22px;
+    right: 1;
   }
 
   .contacts {
