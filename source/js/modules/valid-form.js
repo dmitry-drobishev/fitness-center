@@ -9,5 +9,4 @@ const validForm = () => {
   });
 };
 
-
 export {validForm};

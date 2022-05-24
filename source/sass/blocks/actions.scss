@@ -163,6 +163,12 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    &:hover,
+    &:active {
+      color: $color-resolution-blue;
+      border-bottom: 1px solid $color-resolution-blue;
+    }
   }
 }
 
@@ -186,7 +192,7 @@
 .actions__item {
   display: flex;
   flex-direction: column;
-  border: 7px solid transparent;
+  border: 7px solid $color-transparent;
   border-image: linear-gradient(120deg, rgba(209, 10, 66, 1), rgba(0, 53, 159, 1));
   border-image-slice: 1;
   padding: 25px 28px 29px;
@@ -251,6 +257,11 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    &:hover,
+    &:active {
+      color: $color-venetian-red;
+      border-bottom: 1px solid $color-venetian-red;
+    }
   }
 }
-

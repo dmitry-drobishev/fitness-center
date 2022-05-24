@@ -94,6 +94,7 @@
   font-size: 20px;
   line-height: 150%;
   margin-left: 46px;
+  position: relative;
 
   @include vp-1199 {
     font-size: 18px;
@@ -184,7 +185,7 @@
     a {
       border: none;
       padding: 29px 46px;
-      background: linear-gradient(97.05deg, rgba(209, 10, 66, 1), #003EB7 95.31%);
+      background: linear-gradient(97.05deg, rgba(209, 10, 66, 1), #003eb7 95.31%);
       color: $color-default-white;
     }
   }
