@@ -1,8 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-// import {chooseMembership} from './modules/modals/choose-membership';
-// import {playVideo} from './modules/modals/play-video';
-// import {validForm} from './modules/modals/valid-form';
+// import {chooseMembership} from './modules/choose-membership';
+// import {playVideo} from './modules/play-video';
+import {validForm} from './modules/valid-form';
 
 
 // ---------------------------------
@@ -29,7 +29,6 @@ import Swiper, {Navigation, Pagination} from 'swiper';
 // import Swiper and modules styles
 
 const reviewsSwiper = new Swiper('.reviews', {
-  // configure Swiper to use modules
   modules: [Navigation, Pagination],
 
   loop: true,
@@ -41,10 +40,39 @@ const reviewsSwiper = new Swiper('.reviews', {
 
 });
 
+const trainersSwiper = new Swiper('.trainers__wrapper', {
+  // configure Swiper to use modules
+  modules: [Navigation, Pagination],
+  direction: 'horizontal',
+  // loop: true,
+  slidesPerView: 4,
+  spaceBetween: 40,
+  breakpoints: {
+    319: {
+      slidesPerView: 1,
+    },
+
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+
+    1199: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.trainers__button--next',
+    prevEl: '.trainers__button--back',
+  },
+});
 
 // playVideo();
 // chooseMembership();
-// validForm();
+validForm();
 
 // ---------------------------------
 

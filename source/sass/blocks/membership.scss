@@ -1,7 +1,6 @@
 .membership {
   background-color: $color-ghost-white;
   position: relative;
-  // z-index: -10;
 
   img {
     position: absolute;
@@ -85,38 +84,29 @@
     width: 100%;
     height: 2px;
     background-color: $color-silver;
-    bottom: -15px;
+    bottom: -13px;
   }
 }
 
 .membership__period-item {
   cursor: pointer;
+  margin: 0;
+  font-size: 20px;
+  line-height: 150%;
   margin-left: 46px;
 
   @include vp-1199 {
+    font-size: 18px;
     margin-left: 54px;
   }
 
   @include vp-767 {
     margin-left: 45px;
+    font-size: 16px;
   }
 
   &:first-of-type {
     margin-left: 0;
-  }
-
-  p {
-    margin: 0;
-    font-size: 20px;
-    line-height: 150%;
-
-    @include vp-1199 {
-      font-size: 18px;
-    }
-
-    @include vp-767 {
-      font-size: 16px;
-    }
   }
 
   &--active {
@@ -129,7 +119,7 @@
       height: 2px;
       background-color: $color-crimson-pink;
       left: 0;
-      bottom: -15px;
+      bottom: -13px;
       z-index: 100;
     }
   }
@@ -150,11 +140,7 @@
 
   @include vp-1199 {
     display: block;
-    // display: flex;
-    // flex-direction: column;
-    // gap: 0;
     margin-top: 56px;
-    // align-items: center;
 
     &--disable {
       display: none;
@@ -176,8 +162,6 @@
   padding: 57px 23px 59px 23px;
   box-sizing: border-box;
   border: 7px solid transparent;
-  // border-image: linear-gradient(120deg, rgba(209, 10, 66, 1), rgba(0, 53, 159, 1));
-  // border-image-slice: 1;
 
   @include vp-1199 {
     width: 442px;
@@ -238,7 +222,6 @@
       line-height: 150%;
       color: $color-whispe-grey;
       margin-top: 10px;
-      // opacity: 0.5;
 
       @include vp-767 {
         font-size: 80px;

@@ -1716,22 +1716,19 @@ button,
   width: 100%;
   height: 2px;
   background-color: #c4c4c4;
-  bottom: -15px;
+  bottom: -13px;
 }
 
 .membership__period-item {
   cursor: pointer;
+  margin: 0;
+  font-size: 20px;
+  line-height: 150%;
   margin-left: 46px;
 }
 
 .membership__period-item:first-of-type {
   margin-left: 0;
-}
-
-.membership__period-item p {
-  margin: 0;
-  font-size: 20px;
-  line-height: 150%;
 }
 
 .membership__period-item--active {
@@ -1745,7 +1742,7 @@ button,
   height: 2px;
   background-color: #d10a42;
   left: 0;
-  bottom: -15px;
+  bottom: -13px;
   z-index: 100;
 }
 
@@ -1997,16 +1994,8 @@ button,
 }
 
 .trainers {
+  width: 1160px;
   padding-bottom: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin: 0 auto;
 }
 
@@ -2023,17 +2012,11 @@ button,
 .trainers__wrapper {
   width: 1160px;
   margin: 0;
+  position: relative;
 }
 
 .trainers__list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  list-style: none;
   margin: 0 auto;
-  padding: 0;
   margin-top: 50px;
 }
 
@@ -2041,10 +2024,6 @@ button,
   width: 260px;
   height: 294px;
   position: relative;
-}
-
-.trainers__item--show {
-  display: none;
 }
 
 .trainers__item:focus .trainers__trainer-preview h3 {
@@ -2152,17 +2131,16 @@ button,
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-top: 90px;
+  z-index: 100;
+  background-color: black;
 }
 
 .trainers__button--back {
   background-image: url("../img/svg/arrow-back.svg");
-  margin-right: 40px;
 }
 
 .trainers__button--next {
   background-image: url("../img/svg/arrow-next.svg");
-  margin-left: 40px;
 }
 
 .trainers__button:hover {
@@ -2765,7 +2743,7 @@ button,
   margin: 0 auto;
   width: 100%;
   background-color: #030a1a;
-  padding: 42px 0;
+  padding: 39px 0 42px;
   min-height: 108px;
 }
 
@@ -2773,7 +2751,7 @@ button,
   display: block;
 }
 
-.page-footer__logo svg {
+.page-footer__logo img {
   display: block;
   width: 89px;
   height: 20px;
@@ -2797,6 +2775,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  left: 12px;
 }
 
 .page-footer__nav-list {
@@ -2814,7 +2794,7 @@ button,
 }
 
 .page-footer__nav-item {
-  margin-left: 34px;
+  margin-left: 35px;
 }
 
 .page-footer__nav-item a {
@@ -2841,7 +2821,7 @@ button,
 }
 
 .page-footer__social-item {
-  margin-left: 25px;
+  margin-left: 18px;
 }
 
 .page-footer__social-item--vk {
@@ -2866,6 +2846,10 @@ button,
   height: 24px;
 }
 
+.page-footer__social-item:last-of-type a {
+  padding-right: 0;
+}
+
 .page-footer__social-item a {
   display: block;
   padding: 3px;
@@ -2888,13 +2872,6 @@ button,
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
-  }
-}
-
-@media (max-width: 1279px) {
-  .page-footer__wrapper {
-    width: auto;
-    margin: 0 30px;
   }
 }
 
@@ -3048,11 +3025,8 @@ button,
   }
 
   .membership__period-item {
-    margin-left: 54px;
-  }
-
-  .membership__period-item p {
     font-size: 18px;
+    margin-left: 54px;
   }
 
   .membership__option-list {
@@ -3137,6 +3111,7 @@ button,
   }
 
   .trainers {
+    width: auto;
     padding-bottom: 100px;
     margin: 0 45px;
   }
@@ -3147,13 +3122,11 @@ button,
   }
 
   .trainers__wrapper {
-    width: auto;
+    width: 566px;
+    margin: 0 auto;
   }
 
   .trainers__list {
-    -ms-grid-columns: (auto)[2];
-    grid-template-columns: repeat(2, auto);
-    gap: 30px;
     margin-top: 41px;
   }
 
@@ -3172,14 +3145,6 @@ button,
   .trainers__trainer-preview img {
     -o-object-fit: cover;
     object-fit: cover;
-  }
-
-  .trainers__button--back {
-    margin-right: 40px;
-  }
-
-  .trainers__button--next {
-    margin-left: 40px;
   }
 
   .advantages__wrapper {
@@ -3336,11 +3301,17 @@ button,
     top: 58%;
   }
 
+  .free-contacts-wrapper {
+    display: block;
+  }
+
   .contacts {
     border: none;
-    padding: 70px 0;
+    padding: 70px 0 61px;
     width: 472px;
     margin: 0 auto;
+    position: relative;
+    left: -15px;
   }
 
   .contacts h2 {
@@ -3348,7 +3319,8 @@ button,
   }
 
   .contacts__information-wrapper {
-    margin-top: 50px;
+    margin-top: 32px;
+    margin-left: 0;
     -ms-grid-columns: 267px 1fr;
     grid-template-columns: 267px 1fr;
   }
@@ -3358,7 +3330,7 @@ button,
   }
 
   .contacts__item {
-    margin-top: 35px;
+    margin-top: 20px;
   }
 
   .contacts__item h3 {
@@ -3368,10 +3340,13 @@ button,
   .contacts__item p {
     font-size: 18px;
     line-height: 152%;
+    margin-top: 6px;
   }
 
   .free {
     padding-right: 30px;
+    padding-top: 70px;
+    padding-bottom: 69px;
   }
 
   .free h2 {
@@ -3382,30 +3357,28 @@ button,
   .free__form {
     width: 472px;
     margin: 0 auto;
+    position: relative;
+    left: -15px;
   }
 
   .free__form-list {
     -ms-grid-columns: 206px 206px;
     grid-template-columns: 206px 206px;
     gap: 60px;
-  }
-}
-
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
+    margin-top: 33px;
   }
 
-  .free-contacts-wrapper {
-    display: block;
+  .page-footer {
+    padding-top: 42px;
   }
 
-  .page-footer__logo svg {
+  .page-footer__logo img {
     width: 82px;
     height: 18px;
   }
 
   .page-footer__wrapper {
+    width: auto;
     margin: 0 45px;
   }
 
@@ -3419,6 +3392,12 @@ button,
 
   .page-footer__social-item {
     margin-left: 14px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 24px;
   }
 }
 
@@ -3561,9 +3540,6 @@ button,
 
   .membership__period-item {
     margin-left: 45px;
-  }
-
-  .membership__period-item p {
     font-size: 16px;
   }
 
@@ -3636,8 +3612,8 @@ button,
     font-size: 32px;
   }
 
-  .trainers__list {
-    display: block;
+  .trainers__wrapper {
+    width: 226px;
   }
 
   .trainers__item {
@@ -3656,14 +3632,6 @@ button,
   .trainers__button {
     width: 10px;
     height: 19px;
-  }
-
-  .trainers__button--back {
-    margin-right: 22px;
-  }
-
-  .trainers__button--next {
-    margin-left: 22px;
   }
 
   .advantages__wrapper {
@@ -3875,6 +3843,8 @@ button,
   .contacts {
     width: auto;
     margin: 0 15px;
+    position: static;
+    padding-bottom: 60px;
   }
 
   .contacts h2 {
@@ -3883,6 +3853,7 @@ button,
 
   .contacts__information-wrapper {
     display: block;
+    margin-top: 35px;
   }
 
   .contacts__list--first-col {
@@ -3893,12 +3864,16 @@ button,
     margin-left: 0;
   }
 
+  .contacts__item {
+    margin-top: 19px;
+  }
+
   .contacts__item:first-of-type {
-    margin-top: 35px;
+    margin-top: 18px;
   }
 
   .free {
-    padding: 70px 0;
+    padding: 69px 0;
   }
 
   .free h2 {
@@ -3908,6 +3883,7 @@ button,
   .free__form {
     width: auto;
     margin: 0 15px;
+    position: static;
   }
 
   .free__form-list {
@@ -3915,10 +3891,19 @@ button,
     grid-template-columns: none;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
-    gap: 40px;
+    gap: 34px;
+    margin-top: 36px;
   }
 
-  .page-footer__logo svg {
+  .free__button {
+    margin-top: 38px;
+  }
+
+  .page-footer {
+    padding: 50px 0;
+  }
+
+  .page-footer__logo img {
     width: 68px;
     height: 15px;
   }
@@ -3928,6 +3913,10 @@ button,
     display: block;
   }
 
+  .page-footer__nav {
+    position: static;
+  }
+
   .page-footer__nav-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3935,29 +3924,46 @@ button,
     flex-direction: column;
   }
 
+  .page-footer__nav-list--first {
+    margin-top: 22px;
+  }
+
   .page-footer__nav-list--second {
-    margin-top: -55px;
-    margin-left: 70px;
+    margin-top: -20px;
+    margin-left: 75px;
   }
 
   .page-footer__nav-item {
     margin-left: 0;
-    margin-top: 30px;
+    margin-top: 15px;
+  }
+
+  .page-footer__nav-item:first-of-type {
+    margin-top: 0;
   }
 
   .page-footer__nav-item a {
     font-size: 16px;
     line-height: 19px;
+    padding-left: 0;
   }
 
   .page-footer__social-list {
-    margin-top: 35px;
+    margin-top: 22px;
+    margin-left: 0;
+  }
+
+  .page-footer__social-item {
+    margin-left: 15px;
+  }
+
+  .page-footer__social-item:first-of-type {
     margin-left: 0;
   }
 
   .page-footer__social-item--vk svg {
     width: 32px;
-    height: 14px;
+    height: 17px;
   }
 
   .page-footer__social-item--instagramm svg {
@@ -3968,5 +3974,17 @@ button,
   .page-footer__social-item--fb svg {
     width: 14px;
     height: 27px;
+  }
+
+  .page-footer__social-item:last-of-type a {
+    padding-right: 10px;
+  }
+
+  .page-footer__social-item:first-of-type a {
+    padding-left: 0;
+  }
+
+  .page-footer__social-item a {
+    padding: 10px;
   }
 }
