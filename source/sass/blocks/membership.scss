@@ -66,7 +66,7 @@
   padding: 0;
   list-style: none;
   justify-content: center;
-  margin-top: 34px;
+  margin-top: 28px;
   position: relative;
 
 
@@ -84,30 +84,42 @@
     width: 100%;
     height: 2px;
     background-color: $color-silver;
-    bottom: -13px;
+    bottom: -8px;
   }
 }
 
 .membership__period-item {
-  cursor: pointer;
-  margin: 0;
-  font-size: 20px;
-  line-height: 150%;
-  margin-left: 46px;
-  position: relative;
+  margin-left: 47px;
 
   @include vp-1199 {
-    font-size: 18px;
     margin-left: 54px;
   }
 
   @include vp-767 {
     margin-left: 45px;
-    font-size: 16px;
   }
 
   &:first-of-type {
     margin-left: 0;
+  }
+}
+
+.membership__period-button {
+  display: block;
+  padding: 5px 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0;
+  font-size: 20px;
+  line-height: 150%;
+
+  @include vp-1199 {
+    font-size: 18px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
   }
 
   &--active {
@@ -117,12 +129,17 @@
       position: absolute;
       content: "";
       width: 100%;
+      padding: 0 5px;
       height: 2px;
       background-color: $color-crimson-pink;
       left: 0;
-      bottom: -13px;
+      bottom: -8px;
       z-index: 100;
     }
+  }
+
+  &:hover {
+    color: $color-crimson-pink;
   }
 }
 
@@ -133,7 +150,7 @@
   display: grid;
   grid-template-columns: 360px 360px 360px;
   gap: 40px;
-  margin-top: 50px;
+  margin-top: 45px;
 
   &--disable {
     display: none;
@@ -162,7 +179,9 @@
   z-index: 10;
   padding: 57px 23px 59px 23px;
   box-sizing: border-box;
-  border: 7px solid transparent;
+  border-style: solid;
+  border-width: 7px;
+  border-color: $color-default-white;
 
   @include vp-1199 {
     width: 442px;
@@ -268,4 +287,8 @@
   margin: 0 auto;
   margin-top: auto;
   margin-bottom: 0;
+
+  @include vp-767 {
+    width: 100%;
+  }
 }

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Фитнес центр supergym">
     <title>SuperGym</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/apple.png">
+    <link rel="preload" href="./fonts/bebas-neue-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -112,7 +116,7 @@
             </button>
 
             <div class="gym__video-iframe">
-              <iframe src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </section>
@@ -121,16 +125,16 @@
           <div class="membership__wrapper">
             <h2>Абонементы</h2>
             <ul class="membership__period-list">
-              <li id="0" class="membership__period-item membership__period-item--active">
-                1 месяц
+              <li class="membership__period-item membership__period-item--active">
+                <button class="membership__period-button membership__period-button--active" id="0" type="button">1 месяц</button>
               </li>
 
-              <li id="1" class="membership__period-item">
-                6 месяцев
+              <li class="membership__period-item">
+                <button class="membership__period-button" id="1" type="button">6 месяцев</button>
               </li>
 
-              <li id="2" class="membership__period-item">
-                12 месяцев
+              <li class="membership__period-item">
+                <button class="membership__period-button" id="2" type="button">12 месяцев</button>
               </li>
             </ul>
             <div class="membership__option-lists-wrapper">
@@ -335,7 +339,7 @@
               <source media="(max-width: 1023px)" srcset="./img/promo/promo-tablet.webp 1x, ./img/promo/promo-tablet@2x.webp 2x">
               <source media="(max-width: 1023px)" srcset="./img/promo/promo-tablet.jpg 1x, ./img/promo/promo-tablet@2x.jpg 2x">
               <!-- 1х: 660px; 2x: 1320px-->
-              <source type="image/webp" srcset="./img/promo/promo-desktop.webp 1x, ./img/promo/promo-desktop@2x.webp">
+              <source type="image/webp" srcset="./img/promo/promo-desktop.webp 1x, ./img/promo/promo-desktop@2x.webp 2x">
               <img src="./img/promo/promo-desktop.jpg" srcset="./img/promo/promo-desktop@2x.jpg" width="660" height="500" alt="мужчина с голым торсом в упоре лежа перед ним облако магнезии">
             </picture>
           </div>
@@ -619,7 +623,7 @@
                 <source media="(max-width: 1199px)" srcset="./img/actions/actions-foto-tablet.webp 1x, ./img/actions/actions-foto-tablet@2x.webp 2x">
                 <source media="(max-width: 1199px)" srcset="./img/actions/actions-foto-tablet.jpg 1x, ./img/actions/actions-foto-tablet@2x.jpg 2x">
                 <!-- 1х: 280px; 2x: 560px-->
-                <source type="image/webp" srcset="./img/actions/actions-foto-desktop.webp 1x, ./img/actions/actions-foto-desktop@2x.webp">
+                <source type="image/webp" srcset="./img/actions/actions-foto-desktop.webp 1x, ./img/actions/actions-foto-desktop@2x.webp 2x">
                 <img src="./img/actions/actions-foto-desktop.jpg" srcset="./img/actions/actions-foto-desktop@2x.jpg" width="280" height="462" alt="девушка стоит в половину оборота в спортивном топе на фоне неба">
               </picture>
             </div>

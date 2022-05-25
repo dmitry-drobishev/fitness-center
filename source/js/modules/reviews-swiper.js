@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Swiper, {Navigation, Pagination} from 'swiper';
 
 const reviewsSwiper = () => {
