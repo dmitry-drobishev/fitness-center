@@ -1,7 +1,7 @@
 import Swiper, {Navigation, Pagination} from 'swiper';
 
 const trainersSwiper = () => {
-  const swiper = new Swiper('.trainers__wrapper', {
+  const swiper = new Swiper('.trainers__list-wrapper', {
     // configure Swiper to use modules
     modules: [Navigation, Pagination],
     direction: 'horizontal',
@@ -21,6 +21,11 @@ const trainersSwiper = () => {
       1199: {
         slidesPerView: 4,
         spaceBetween: 40,
+      },
+
+      1349: {
+        slidesPerView: 4,
+        spaceBetween: 25,
       },
     },
 

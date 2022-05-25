@@ -1,5 +1,4 @@
 .trainers {
-  width: $desktop-content;
   padding-bottom: 120px;
   margin: 0 auto;
 
@@ -21,7 +20,8 @@
     line-height: 100%;
     letter-spacing: 0.03em;
     text-align: left;
-    margin: 0;
+    width: $desktop-content;
+    margin: 0 auto;
 
     @include vp-1199 {
       font-size: 42px;
@@ -35,10 +35,20 @@
 }
 
 .trainers__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trainers__list-wrapper {
   width: $desktop-content;
-  margin: 0;
+  margin: 0 40px;
   position: relative;
 
+  @include vp-1349 {
+    width: 1085px;
+    margin: 0 25px;
+  }
 
   @include vp-1199 {
     width: 566px;
@@ -51,7 +61,7 @@
 }
 
 .trainers__list {
-  margin: 0 auto;
+  margin: 0;
   margin-top: 50px;
 
   @include vp-1199 {
@@ -200,7 +210,8 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: 1000;
-  position: absolute;
+  // position: absolute;
+  background-color: black;
   top: 50%;
 
   @include vp-767 {
@@ -217,7 +228,7 @@
 
   &--back {
     background-image: url("../img/svg/arrow-back.svg");
-    left: 4px;
+    left: -20px;
 
     @include vp-1199 {
       // margin-right: 40px;
@@ -230,7 +241,7 @@
 
   &--next {
     background-image: url("../img/svg/arrow-next.svg");
-    right: 4px;
+    right: -20px;
 
     @include vp-1199 {
       // margin-left: 40px;
