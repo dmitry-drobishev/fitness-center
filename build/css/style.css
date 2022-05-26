@@ -2083,6 +2083,7 @@ button,
   height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
+  background-color: #b6bdcc;
 }
 
 .trainers__trainer-information {
@@ -2569,6 +2570,8 @@ button,
   display: block;
   width: 80px;
   height: 80px;
+  border-radius: 50%;
+  background-color: #b6bdcc;
 }
 
 .reviews__button {
