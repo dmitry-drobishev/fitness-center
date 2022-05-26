@@ -50,6 +50,7 @@
 
 .promo__information-row-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .promo__information-date-time-wrapper {
@@ -84,7 +85,7 @@
     margin: 0;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 12px;
     width: fit-content;
     position: relative;
 
@@ -94,7 +95,7 @@
       width: 100%;
       height: 2px;
       background-color: $color-default-white;
-      top: -5px;
+      top: -3px;
       left: 0;
 
       @include vp-1199 {
@@ -127,7 +128,7 @@
   display: flex;
   flex-direction: column;
   background-color: $color-torch-red;
-  padding: 87px 78px 85px 78px;
+  padding: 85px 78px 85px 78px;
 
   @include vp-1199 {
     padding: 51px 45px 49px 45px;
@@ -159,7 +160,7 @@
     color: $color-default-white;
     margin: 0;
     font-weight: 400;
-    margin-top: 3px;
+    margin-top: 7px;
 
     @include vp-1199 {
       font-size: 12px;

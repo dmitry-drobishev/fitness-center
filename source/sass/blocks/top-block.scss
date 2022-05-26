@@ -30,7 +30,7 @@
 
   @include vp-1199 {
     margin-top: 40px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
   @include vp-767 {
@@ -105,7 +105,7 @@
   margin-top: -4px;
 
   @include vp-1199 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 325px 1fr;
     gap: 30px;
     margin: 0;
   }
@@ -136,6 +136,7 @@
   width: 100%;
 
   @include vp-1199 {
+    // width: 334px;
     margin-top: 55px;
   }
 
@@ -205,7 +206,8 @@
     }
 
     @include vp-767 {
-      margin-right: -40px;
+      margin-bottom: 12px;
+      margin-right: -36px;
     }
   }
 }
@@ -213,10 +215,15 @@
 .top-block__title-row-wrapper {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
   margin-top: 13px;
 
   @include vp-1199 {
     margin-top: 0;
+  }
+
+  @include vp-767 {
+    justify-content: flex-end;
   }
 }
 

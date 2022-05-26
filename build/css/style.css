@@ -1437,6 +1437,8 @@ button,
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 13px;
 }
 
@@ -1677,6 +1679,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0 auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1876,6 +1880,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .promo__information-date-time-wrapper {
@@ -1905,7 +1911,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 12px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1918,7 +1924,7 @@ button,
   width: 100%;
   height: 2px;
   background-color: #ffffff;
-  top: -5px;
+  top: -3px;
   left: 0;
 }
 
@@ -1939,7 +1945,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ed0233;
-  padding: 87px 78px 85px 78px;
+  padding: 85px 78px 85px 78px;
 }
 
 .promo__information-wrapper h2 {
@@ -1958,7 +1964,7 @@ button,
   color: #ffffff;
   margin: 0;
   font-weight: 400;
-  margin-top: 3px;
+  margin-top: 7px;
 }
 
 .promo__information-time {
@@ -2168,7 +2174,7 @@ button,
 .advantages__wrapper {
   width: 1040px;
   margin: 0 auto;
-  padding: 120px 0 118px 0;
+  padding: 120px 0 115px 0;
 }
 
 .advantages__wrapper h2 {
@@ -2192,7 +2198,7 @@ button,
   -webkit-column-gap: 60px;
   -moz-column-gap: 60px;
   column-gap: 60px;
-  margin-top: 58px;
+  margin-top: 60px;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
@@ -2288,17 +2294,21 @@ button,
 }
 
 .advantages__item p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
   font-weight: 700;
   font-size: 71px;
   line-height: 100%;
-  background: -o-linear-gradient(307.49deg, #d10a42 0%, #0041ca 87.33%);
-  background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
-  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -o-linear-gradient(307.49deg, #d10a42 0%, #0041ca 87.33%);
+  background-image: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+  text-shadow: 0 0 rgba(255, 255, 255, 0);
   margin: 0;
 }
 
@@ -2315,7 +2325,7 @@ button,
   font-weight: 300;
   font-size: 16px;
   line-height: 140%;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 .actions {
@@ -2859,8 +2869,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2936,7 +2944,7 @@ button,
 
   .top-block__header {
     margin-top: 40px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
   .top-block__header a {
@@ -2951,8 +2959,8 @@ button,
   }
 
   .top-block__content-wrapper {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 325px 1fr;
+    grid-template-columns: 325px 1fr;
     gap: 30px;
     margin: 0;
   }
@@ -3058,7 +3066,6 @@ button,
     width: 349px;
     height: 443px;
     bottom: -125px;
-    z-index: -1;
   }
 
   .membership__wrapper {
@@ -3073,7 +3080,7 @@ button,
   }
 
   .membership__period-list {
-    margin-top: 28px;
+    margin-top: 24px;
   }
 
   .membership__period-item {
@@ -3086,7 +3093,7 @@ button,
 
   .membership__option-list {
     display: block;
-    margin-top: 56px;
+    margin-top: 52px;
   }
 
   .membership__option-list--disable {
@@ -3196,7 +3203,7 @@ button,
   .advantages__wrapper {
     width: auto;
     margin: 0 45px;
-    padding: 98px 0 94px 0;
+    padding: 95px 0 94px 0;
   }
 
   .advantages__wrapper h2 {
@@ -3206,7 +3213,7 @@ button,
   .advantages__list {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    margin-top: 38px;
+    margin-top: 40px;
     row-gap: 44px;
     -webkit-column-gap: 32px;
     -moz-column-gap: 32px;
@@ -3271,7 +3278,7 @@ button,
   .actions {
     width: auto;
     margin: 0 45px;
-    padding: 97px 0 101px;
+    padding: 95px 0 101px;
   }
 
   .actions h2 {
@@ -3280,7 +3287,7 @@ button,
 
   .actions__wrapper {
     display: block;
-    margin-top: 35px;
+    margin-top: 37px;
   }
 
   .actions__basic-action {
@@ -3304,7 +3311,7 @@ button,
 
   .actions__price span {
     text-align: left;
-    margin-top: 19px;
+    margin-top: 10px;
   }
 
   .actions__list {
@@ -3509,7 +3516,14 @@ button,
   }
 
   .top-block__title-wrapper span {
-    margin-right: -40px;
+    margin-bottom: 12px;
+    margin-right: -36px;
+  }
+
+  .top-block__title-row-wrapper {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
 
   .top-block__button {
@@ -3566,6 +3580,14 @@ button,
     margin-top: 40px;
   }
 
+  .gym__video img {
+    height: 167px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 100% 100%;
+    object-position: 100% 100%;
+  }
+
   .membership img {
     display: none;
   }
@@ -3581,7 +3603,7 @@ button,
   }
 
   .membership__period-list {
-    margin-top: 20px;
+    margin-top: 17px;
   }
 
   .membership__period-item {
@@ -3593,7 +3615,7 @@ button,
   }
 
   .membership__option-list {
-    margin-top: 49px;
+    margin-top: 43px;
   }
 
   .membership__option-item {
@@ -3623,7 +3645,9 @@ button,
   }
 
   .membership__option-button {
-    width: 100%;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .promo {
@@ -3744,6 +3768,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin: 0 auto;
   }
 
   .advantages__item p span {
@@ -4003,6 +4028,8 @@ button,
   }
 
   .page-footer__social-list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-top: 22px;
     margin-left: 0;
   }

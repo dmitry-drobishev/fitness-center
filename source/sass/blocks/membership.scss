@@ -13,7 +13,6 @@
       width: 349px;
       height: 443px;
       bottom: -125px;
-      z-index: -1;
     }
 
     @include vp-767 {
@@ -61,6 +60,7 @@
 
 .membership__period-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   width: fit-content;
   padding: 0;
@@ -71,11 +71,11 @@
 
 
   @include vp-1199 {
-    margin-top: 28px;
+    margin-top: 24px;
   }
 
   @include vp-767 {
-    margin-top: 20px;
+    margin-top: 17px;
   }
 
   &::after {
@@ -158,7 +158,7 @@
 
   @include vp-1199 {
     display: block;
-    margin-top: 56px;
+    margin-top: 52px;
 
     &--disable {
       display: none;
@@ -166,7 +166,7 @@
   }
 
   @include vp-767 {
-    margin-top: 49px;
+    margin-top: 43px;
   }
 }
 
@@ -289,6 +289,8 @@
   margin-bottom: 0;
 
   @include vp-767 {
-    width: 100%;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }

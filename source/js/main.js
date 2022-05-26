@@ -29,7 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 trainersSwiper();
 reviewsSwiper();
-
 playVideo();
 chooseMembership();
 validForm();
