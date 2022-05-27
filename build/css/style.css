@@ -1649,14 +1649,17 @@ button,
 .membership {
   background-color: #f8f9fc;
   position: relative;
+  z-index: -10;
 }
 
 .membership img {
+  display: block;
   position: absolute;
   width: 285px;
   height: 493px;
   right: 0;
   bottom: -150px;
+  z-index: -1;
 }
 
 .membership__wrapper {
@@ -2042,6 +2045,15 @@ button,
   width: 260px;
   height: 294px;
   position: relative;
+  overflow-y: scroll;
+}
+
+.trainers__item::-webkit-scrollbar {
+  width: 0;
+}
+
+.trainers__item::-webkit-scrollbar-thumb {
+  width: 0;
 }
 
 .trainers__item:hover .trainers__trainer-preview h3,
@@ -2093,6 +2105,7 @@ button,
   width: 100%;
   min-height: 100%;
   top: 0;
+  left: 0;
   padding: 57px 30px 30px 30px;
   background-color: rgba(16, 38, 84, 0.89);
 }
@@ -2697,13 +2710,13 @@ button,
   margin: 0;
 }
 
-.free__form {
+.free form {
   width: 410px;
   margin-right: 0;
   margin-left: auto;
 }
 
-.free__form input {
+.free form input {
   border: none;
   border-bottom: 1px solid #74819c;
   width: 100%;
@@ -2717,7 +2730,7 @@ button,
   padding-bottom: 5px;
 }
 
-.free__form input::-webkit-input-placeholder {
+.free form input::-webkit-input-placeholder {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -2725,7 +2738,7 @@ button,
   color: #ffffff;
 }
 
-.free__form input::-moz-placeholder {
+.free form input::-moz-placeholder {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -2733,7 +2746,7 @@ button,
   color: #ffffff;
 }
 
-.free__form input:-ms-input-placeholder {
+.free form input:-ms-input-placeholder {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -2741,7 +2754,7 @@ button,
   color: #ffffff;
 }
 
-.free__form input::-ms-input-placeholder {
+.free form input::-ms-input-placeholder {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -2749,7 +2762,7 @@ button,
   color: #ffffff;
 }
 
-.free__form input::placeholder {
+.free form input::placeholder {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -2757,7 +2770,7 @@ button,
   color: #ffffff;
 }
 
-.free__form input:hover {
+.free form input:hover {
   opacity: 0.7;
 }
 
@@ -2802,6 +2815,10 @@ button,
   min-height: 108px;
 }
 
+.page-footer__logo {
+  margin-top: 5px;
+}
+
 .page-footer__logo a {
   display: block;
 }
@@ -2818,9 +2835,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -2832,6 +2846,7 @@ button,
   display: flex;
   position: relative;
   left: 12px;
+  margin-top: 4px;
 }
 
 .page-footer__nav-list {
@@ -3108,6 +3123,7 @@ button,
     min-height: 448px;
     margin: 0 auto;
     margin-top: 40px;
+    z-index: 100;
   }
 
   .promo {
@@ -3410,7 +3426,7 @@ button,
     line-height: 100%;
   }
 
-  .free__form {
+  .free form {
     width: 472px;
     margin: 0 auto;
     position: relative;
@@ -3428,6 +3444,10 @@ button,
     padding-top: 42px;
   }
 
+  .page-footer__logo {
+    margin-top: 6px;
+  }
+
   .page-footer__logo img {
     width: 82px;
     height: 18px;
@@ -3436,6 +3456,10 @@ button,
   .page-footer__wrapper {
     width: auto;
     margin: 0 45px;
+  }
+
+  .page-footer__nav {
+    margin-top: 6px;
   }
 
   .page-footer__nav-item {
@@ -3927,6 +3951,7 @@ button,
     margin: 0 15px;
     position: static;
     padding-bottom: 60px;
+    padding-top: 68px;
   }
 
   .contacts h2 {
@@ -3962,7 +3987,7 @@ button,
     font-size: 32px;
   }
 
-  .free__form {
+  .free form {
     width: auto;
     margin: 0 15px;
     position: static;
@@ -3985,6 +4010,10 @@ button,
     padding: 50px 0;
   }
 
+  .page-footer__logo {
+    margin-top: 0;
+  }
+
   .page-footer__logo img {
     width: 68px;
     height: 15px;
@@ -3993,6 +4022,10 @@ button,
   .page-footer__wrapper {
     margin: 0 15px;
     display: block;
+  }
+
+  .page-footer__nav {
+    margin-top: 0;
   }
 
   .page-footer__nav {
@@ -4012,7 +4045,7 @@ button,
 
   .page-footer__nav-list--second {
     margin-top: -20px;
-    margin-left: 75px;
+    margin-left: 73px;
   }
 
   .page-footer__nav-item {

@@ -15,6 +15,16 @@
 }
 
 .page-footer__logo {
+  margin-top: 5px;
+
+  @include vp-1199 {
+    margin-top: 6px;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+  }
+
   a {
     display: block;
   }
@@ -40,7 +50,6 @@
   width: $desktop-content;
   margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 
   @include vp-1199 {
@@ -58,6 +67,15 @@
   display: flex;
   position: relative;
   left: 12px;
+  margin-top: 4px;
+
+  @include vp-1199 {
+    margin-top: 6px;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+  }
 
   @include vp-767 {
     position: static;
@@ -85,7 +103,7 @@
   &--second {
     @include vp-767 {
       margin-top: -20px;
-      margin-left: 75px;
+      margin-left: 73px;
     }
   }
 }

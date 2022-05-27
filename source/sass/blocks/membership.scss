@@ -1,13 +1,16 @@
 .membership {
   background-color: $color-ghost-white;
   position: relative;
+  z-index: -10;
 
   img {
+    display: block;
     position: absolute;
     width: 285px;
     height: 493px;
     right: 0;
     bottom: -150px;
+    z-index: -1;
 
     @include vp-1199 {
       width: 349px;
@@ -188,6 +191,7 @@
     min-height: 448px;
     margin: 0 auto;
     margin-top: 40px;
+    z-index: 100;
   }
 
   @include vp-767 {

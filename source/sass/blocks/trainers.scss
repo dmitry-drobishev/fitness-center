@@ -74,6 +74,15 @@
   width: 260px;
   height: 294px;
   position: relative;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 0;
+  }
 
   @include vp-1199 {
     width: 268px;
@@ -140,6 +149,7 @@
   width: 100%;
   min-height: 100%;
   top: 0;
+  left: 0;
   padding: 57px 30px 30px 30px;
   background-color: rgba(16, 38, 84, 0.89);
 
