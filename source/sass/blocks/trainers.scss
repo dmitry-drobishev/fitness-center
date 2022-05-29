@@ -75,6 +75,7 @@
   height: 294px;
   position: relative;
   overflow-y: scroll;
+  cursor: pointer;
 
   &::-webkit-scrollbar {
     width: 0;

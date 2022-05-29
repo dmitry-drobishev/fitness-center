@@ -209,12 +209,12 @@
     font-weight: 700;
     font-size: 71px;
     line-height: 100%;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(142.51deg, $color-crimson-pink 0%, $color-cobalt-blue 87.33%);
-    text-shadow: 0 0 $color-transparent;
-    margin: 0;
 
+    background: linear-gradient(142.51deg, $color-crimson-pink 0%, $color-cobalt-blue 87.33%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: $color-transparent;
+    margin: 0;
 
     @include vp-1199 {
       font-size: 58px;
