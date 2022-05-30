@@ -38,10 +38,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 51px;
 
   @include vp-1199 {
-    margin-top: 41px;
+    margin-top: 40px;
+  }
+
+  @include vp-767 {
+    margin-top: 42px;
   }
 }
 
