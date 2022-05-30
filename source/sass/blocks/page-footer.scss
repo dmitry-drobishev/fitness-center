@@ -152,6 +152,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-left: 40px;
 
@@ -184,8 +185,6 @@
   }
 
   &--vk {
-    margin-left: 0;
-
     svg {
       display: block;
       width: 24px;

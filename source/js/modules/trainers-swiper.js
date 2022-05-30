@@ -5,6 +5,7 @@ const trainersSwiper = () => {
   const swiper = new Swiper('.trainers__list-wrapper', {
     // configure Swiper to use modules
     modules: [Navigation, Pagination],
+    loop: true,
     direction: 'horizontal',
     slidesPerView: 4,
     spaceBetween: 40,

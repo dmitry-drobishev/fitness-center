@@ -2944,6 +2944,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2952,10 +2954,6 @@ button,
 
 .page-footer__social-item {
   margin-left: 18px;
-}
-
-.page-footer__social-item--vk {
-  margin-left: 0;
 }
 
 .page-footer__social-item--vk svg {
