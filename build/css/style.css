@@ -1898,7 +1898,9 @@ button,
 .promo__wrapper img {
   display: block;
   width: 660px;
-  height: 500px;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   background-color: #102654;
 }
 
@@ -2880,6 +2882,10 @@ button,
 
 .page-footer__logo a {
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 100;
 }
 
 .page-footer__logo img {
@@ -2924,6 +2930,10 @@ button,
 
 .page-footer__nav-item {
   margin-left: 35px;
+}
+
+.page-footer__nav-item--show {
+  display: none;
 }
 
 .page-footer__nav-item a {
@@ -3200,7 +3210,6 @@ button,
 
   .promo__wrapper img {
     width: 386px;
-    height: 292px;
   }
 
   .promo__information-date-time-wrapper {
@@ -4090,7 +4099,16 @@ button,
   }
 
   .page-footer__logo {
+    position: relative;
+    width: 68px;
+    height: 15px;
     margin-top: 0;
+  }
+
+  .page-footer__logo a {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .page-footer__logo img {
@@ -4112,28 +4130,81 @@ button,
   }
 
   .page-footer__nav-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .page-footer__nav-list--first {
-    margin-top: 22px;
-  }
-
-  .page-footer__nav-list--second {
+    display: -ms-grid;
+    display: grid;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 20px;
+    -ms-grid-columns: 145px 30px 145px;
+    grid-template-columns: 145px 145px;
+    -ms-grid-rows: auto 20px auto 20px auto;
+    grid-template-areas: "hid actions" "services trainers" "memberships timetable";
     margin-top: -20px;
-    margin-left: 73px;
   }
 
   .page-footer__nav-item {
     margin-left: 0;
-    margin-top: 15px;
   }
 
-  .page-footer__nav-item:first-of-type {
-    margin-top: 0;
+  .page-footer__nav-item:nth-of-type(1) {
+    grid-area: hid;
+  }
+
+  .page-footer__nav-item:nth-of-type(2) {
+    grid-area: services;
+  }
+
+  .page-footer__nav-item:nth-of-type(3) {
+    grid-area: memberships;
+  }
+
+  .page-footer__nav-item:nth-of-type(4) {
+    grid-area: actions;
+  }
+
+  .page-footer__nav-item:nth-of-type(5) {
+    grid-area: trainers;
+  }
+
+  .page-footer__nav-item:nth-of-type(6) {
+    grid-area: timetable;
+  }
+
+  .page-footer__nav-item:nth-of-type(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .page-footer__nav-item:nth-of-type(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .page-footer__nav-item:nth-of-type(3) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+
+  .page-footer__nav-item:nth-of-type(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .page-footer__nav-item:nth-of-type(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+
+  .page-footer__nav-item:nth-of-type(6) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+
+  .page-footer__nav-item--show {
+    display: block;
+    opacity: 0;
+    z-index: -100;
   }
 
   .page-footer__nav-item a {

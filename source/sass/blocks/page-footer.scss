@@ -22,11 +22,22 @@
   }
 
   @include vp-767 {
+    position: relative;
+    width: 68px;
+    height: 15px;
     margin-top: 0;
   }
 
   a {
     display: block;
+    width: fit-content;
+    z-index: 100;
+
+    @include vp-767 {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
   img {
@@ -91,20 +102,15 @@
   width: fit-content;
 
   @include vp-767 {
-    flex-direction: column;
-  }
-
-  &--first {
-    @include vp-767 {
-      margin-top: 22px;
-    }
-  }
-
-  &--second {
-    @include vp-767 {
-      margin-top: -20px;
-      margin-left: 73px;
-    }
+    display: grid;
+    column-gap: 30px;
+    row-gap: 20px;
+    grid-template-columns: 145px 145px;
+    grid-template-areas:
+    "hid actions"
+    "services trainers"
+    "memberships timetable";
+    margin-top: -20px;
   }
 }
 
@@ -117,12 +123,39 @@
 
   @include vp-767 {
     margin-left: 0;
-    margin-top: 15px;
+
+    &:nth-of-type(1) {
+      grid-area: hid;
+    }
+
+    &:nth-of-type(2) {
+      grid-area: services;
+    }
+
+    &:nth-of-type(3) {
+      grid-area: memberships;
+    }
+
+    &:nth-of-type(4) {
+      grid-area: actions;
+    }
+
+    &:nth-of-type(5) {
+      grid-area: trainers;
+    }
+
+    &:nth-of-type(6) {
+      grid-area: timetable;
+    }
   }
 
-  &:first-of-type {
+  &--show {
+    display: none;
+
     @include vp-767 {
-      margin-top: 0;
+      display: block;
+      opacity: 0;
+      z-index: -100;
     }
   }
 

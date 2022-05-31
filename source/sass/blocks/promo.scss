@@ -32,12 +32,12 @@
   img {
     display: block;
     width: 660px;
-    height: 500px;
+    height: 100%;
+    object-fit: cover;
     background-color: $color-sapphire-blue;
 
     @include vp-1199 {
       width: 386px;
-      height: 292px;
     }
 
     @include vp-767 {
