@@ -2878,6 +2878,12 @@ button,
 
 .page-footer__logo {
   margin-top: 5px;
+  width: 89px;
+  height: 20px;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .page-footer__logo a {
@@ -2912,6 +2918,10 @@ button,
   position: relative;
   left: 12px;
   margin-top: 4px;
+  margin-left: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .page-footer__nav-list {
@@ -2923,13 +2933,13 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .page-footer__nav-item {
   margin-left: 35px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .page-footer__nav-item--show {
@@ -3525,6 +3535,8 @@ button,
 
   .page-footer__logo {
     margin-top: 6px;
+    width: 82px;
+    height: 18px;
   }
 
   .page-footer__logo img {
@@ -3538,7 +3550,8 @@ button,
   }
 
   .page-footer__nav {
-    margin-top: 6px;
+    margin-top: 4px;
+    margin-left: 0;
   }
 
   .page-footer__nav-item {
@@ -4135,10 +4148,10 @@ button,
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
-    row-gap: 20px;
-    -ms-grid-columns: 145px 30px 145px;
-    grid-template-columns: 145px 145px;
-    -ms-grid-rows: auto 20px auto 20px auto;
+    row-gap: 15px;
+    -ms-grid-columns: 130px 30px 130px;
+    grid-template-columns: 130px 130px;
+    -ms-grid-rows: auto 15px auto 15px auto;
     grid-template-areas: "hid actions" "services trainers" "memberships timetable";
     margin-top: -20px;
   }
