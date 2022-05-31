@@ -159,7 +159,8 @@
   }
 
   @include vp-767 {
-    width: 100%;
+    width: 320px;
+    margin: 0 auto;
     height: 167px;
     position: static;
     transform: translate(0, 0);
@@ -185,8 +186,8 @@
 
     @include vp-767 {
       height: 167px;
+      width: 100%;
       object-fit: cover;
-      object-position: 100% 100%;
     }
   }
 }

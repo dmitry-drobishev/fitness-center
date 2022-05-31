@@ -2072,16 +2072,7 @@ button,
   width: 260px;
   height: 294px;
   position: relative;
-  overflow-y: scroll;
   cursor: pointer;
-}
-
-.trainers__item::-webkit-scrollbar {
-  width: 0;
-}
-
-.trainers__item::-webkit-scrollbar-thumb {
-  width: 0;
 }
 
 .trainers__item:hover .trainers__trainer-preview h3,
@@ -2131,11 +2122,20 @@ button,
   z-index: 100;
   position: absolute;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   padding: 57px 30px 30px 30px;
   background-color: rgba(16, 38, 84, 0.89);
+  overflow-y: scroll;
+}
+
+.trainers__trainer-information::-webkit-scrollbar {
+  width: 0;
+}
+
+.trainers__trainer-information::-webkit-scrollbar-thumb {
+  width: 0;
 }
 
 .trainers__trainer-information p {
@@ -2251,13 +2251,12 @@ button,
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
+  grid-column: 2;
   background-color: #1c3374;
   padding: 52px 34px;
   min-height: 307px;
-  position: relative;
-  top: 10px;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .advantages__center-item p {
@@ -2407,16 +2406,23 @@ button,
 }
 
 .actions__basic-action {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  min-height: 462px;
 }
 
 .actions__basic-action img {
   display: block;
   width: 280px;
-  height: 462px;
+  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   background-color: #3262ca;
 }
 
@@ -3664,7 +3670,8 @@ button,
   }
 
   .gym__video {
-    width: 100%;
+    width: 320px;
+    margin: 0 auto;
     height: 167px;
     position: static;
     -webkit-transform: translate(0, 0);
@@ -3675,10 +3682,9 @@ button,
 
   .gym__video img {
     height: 167px;
+    width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: 100% 100%;
-    object-position: 100% 100%;
   }
 
   .membership img {
@@ -3894,6 +3900,7 @@ button,
 
   .actions__basic-action {
     display: block;
+    min-height: auto;
   }
 
   .actions__basic-action img {
