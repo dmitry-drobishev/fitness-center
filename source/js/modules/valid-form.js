@@ -8,15 +8,17 @@ const validForm = () => {
     iMask(myInput, maskOptions);
   });
 
-  // const PHONE_LENGTH = 11;
+  const PHONE_LENGTH = 16;
   const userInput = document.getElementById('input-phone');
   const submitButton = document.getElementById('free-button');
 
   submitButton.addEventListener('click', () => {
     let a = userInput.value.length;
 
-    if (a < 16) {
-      userInput.setCustomValidity('некорректная форма записи');
+    if (a < PHONE_LENGTH) {
+      userInput.setCustomValidity('- номер телефона состоит из 11 цифр; - в номере телефона не может быть букв;');
+    } else {
+      userInput.setCustomValidity('');
     }
   });
 };

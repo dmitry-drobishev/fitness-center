@@ -1663,8 +1663,8 @@ button,
 .membership img {
   display: block;
   position: absolute;
-  width: 285px;
-  height: 493px;
+  width: 287px;
+  height: 494px;
   right: 0;
   bottom: -150px;
   z-index: -1;
@@ -2218,7 +2218,7 @@ button,
 .advantages__wrapper {
   width: 1040px;
   margin: 0 auto;
-  padding: 119px 0 113px 0;
+  padding: 119px 0 111px 0;
 }
 
 .advantages__wrapper h2 {
@@ -2253,15 +2253,30 @@ button,
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
   -ms-grid-column: 2;
-  grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  height: 100%;
+  padding: 9px 0;
+}
+
+.advantages__center-item-wrapper {
   background-color: #1c3374;
   padding: 52px 34px;
   min-height: 307px;
-  -ms-grid-row-align: center;
-  align-self: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.advantages__center-item p {
+.advantages__center-item-wrapper p {
   font-weight: 700;
   font-size: 74px;
   line-height: 100%;
@@ -2279,17 +2294,17 @@ button,
   align-items: center;
 }
 
-.advantages__center-item p span {
+.advantages__center-item-wrapper p span {
   display: block;
   font-weight: 700;
   font-size: 26px;
   line-height: 100%;
   text-align: center;
   color: #ffffff;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
-.advantages__center-item span {
+.advantages__center-item-wrapper span {
   display: block;
   font-size: 16px;
   line-height: 150%;
@@ -2314,7 +2329,7 @@ button,
 }
 
 .advantages__item--second-line {
-  padding-top: 73px;
+  padding-top: 71px;
   -webkit-column-gap: 33px;
   -moz-column-gap: 33px;
   column-gap: 33px;
@@ -2408,9 +2423,6 @@ button,
 }
 
 .actions__basic-action {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -2421,7 +2433,6 @@ button,
 .actions__basic-action img {
   display: block;
   width: 280px;
-  height: auto;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -2894,6 +2905,19 @@ button,
   z-index: 100;
 }
 
+.page-footer__logo a[href] {
+  cursor: pointer;
+}
+
+.page-footer__logo a[href]:hover {
+  color: #1c3374;
+  opacity: 0.7;
+}
+
+.page-footer__logo a[href]:active {
+  opacity: 0.5;
+}
+
 .page-footer__logo img {
   display: block;
   width: 89px;
@@ -2942,8 +2966,29 @@ button,
   width: fit-content;
 }
 
-.page-footer__nav-item--show {
+.page-footer__nav-item:nth-of-type(1) {
   display: none;
+  grid-area: hid;
+}
+
+.page-footer__nav-item:nth-of-type(2) {
+  grid-area: services;
+}
+
+.page-footer__nav-item:nth-of-type(3) {
+  grid-area: memberships;
+}
+
+.page-footer__nav-item:nth-of-type(4) {
+  grid-area: actions;
+}
+
+.page-footer__nav-item:nth-of-type(5) {
+  grid-area: trainers;
+}
+
+.page-footer__nav-item:nth-of-type(6) {
+  grid-area: timetable;
 }
 
 .page-footer__nav-item a {
@@ -3327,18 +3372,31 @@ button,
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
+    height: auto;
+    padding: 0;
+  }
+
+  .advantages__center-item-wrapper {
+    display: block;
+    position: static;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
     width: 442px;
     min-height: 239px;
     margin: 0 auto;
     padding: 33px 120px;
   }
 
-  .advantages__center-item p span {
+  .advantages__center-item-wrapper p span {
     font-size: 22px;
     margin-top: 5px;
   }
 
-  .advantages__center-item span {
+  .advantages__center-item-wrapper span {
     margin-top: 19px;
   }
 
@@ -3406,7 +3464,6 @@ button,
 
   .actions__basic-action img {
     width: 399px;
-    height: 462px;
   }
 
   .actions__price p {
@@ -3550,7 +3607,7 @@ button,
   }
 
   .page-footer__nav {
-    margin-top: 4px;
+    margin-top: 5px;
     margin-left: 0;
   }
 
@@ -3853,17 +3910,21 @@ button,
   }
 
   .advantages__center-item {
+    display: block;
+  }
+
+  .advantages__center-item-wrapper {
     width: 100%;
     margin-top: 41px;
     margin-bottom: 10px;
     padding: 39px;
   }
 
-  .advantages__center-item p span {
+  .advantages__center-item-wrapper p span {
     margin-top: 0;
   }
 
-  .advantages__center-item span {
+  .advantages__center-item-wrapper span {
     margin-top: 13px;
   }
 
@@ -4156,68 +4217,50 @@ button,
     margin-top: -20px;
   }
 
-  .page-footer__nav-item {
-    margin-left: 0;
-  }
-
   .page-footer__nav-item:nth-of-type(1) {
     grid-area: hid;
-  }
-
-  .page-footer__nav-item:nth-of-type(2) {
-    grid-area: services;
-  }
-
-  .page-footer__nav-item:nth-of-type(3) {
-    grid-area: memberships;
-  }
-
-  .page-footer__nav-item:nth-of-type(4) {
-    grid-area: actions;
-  }
-
-  .page-footer__nav-item:nth-of-type(5) {
-    grid-area: trainers;
-  }
-
-  .page-footer__nav-item:nth-of-type(6) {
-    grid-area: timetable;
-  }
-
-  .page-footer__nav-item:nth-of-type(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-
-  .page-footer__nav-item:nth-of-type(2) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-  }
-
-  .page-footer__nav-item:nth-of-type(3) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-  }
-
-  .page-footer__nav-item:nth-of-type(4) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-  }
-
-  .page-footer__nav-item:nth-of-type(5) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-  }
-
-  .page-footer__nav-item:nth-of-type(6) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 3;
-  }
-
-  .page-footer__nav-item--show {
     display: block;
     opacity: 0;
     z-index: -100;
+  }
+
+  .page-footer__nav-item:nth-of-type(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .page-footer__nav-item:nth-of-type(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .page-footer__nav-item:nth-of-type(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .page-footer__nav-item:nth-of-type(3) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+
+  .page-footer__nav-item:nth-of-type(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .page-footer__nav-item:nth-of-type(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+
+  .page-footer__nav-item:nth-of-type(6) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+
+  .page-footer__nav-item {
+    margin-left: 0;
   }
 
   .page-footer__nav-item a {
@@ -4234,7 +4277,8 @@ button,
   }
 
   .page-footer__social-item {
-    margin-left: 15px;
+    margin-right: 15px;
+    margin-left: 0;
   }
 
   .page-footer__social-item:first-of-type {

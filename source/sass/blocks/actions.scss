@@ -50,7 +50,6 @@
 }
 
 .actions__basic-action {
-  height: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 462px;
@@ -68,15 +67,12 @@
   img {
     display: block;
     width: 280px;
-    // height: 462px;
-    height: auto;
     height: 100%;
     object-fit: cover;
     background-color: rgb(50, 98, 202);
 
     @include vp-1199 {
       width: 399px;
-      height: 462px;
     }
 
     @include vp-767 {
